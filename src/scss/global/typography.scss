@@ -1,0 +1,46 @@
+/********************
+/ Use this file for major, element level font
+/ styles. The one exception would be for heading
+/ related classes e.g. .h1
+/*******************/
+
+@font-face {
+  font-family: 'GA-heading';
+  src: url('../fonts/pfdintextcomppro-bold-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pfdintextcomppro-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pfdintextcomppro-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/pfdintextcomppro-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+/********************
+/ Font Families
+/*******************/
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: $font-family--heading;
+  margin-top: 0;
+	text-transform: uppercase;
+}
+
+/********************
+/ Font Sizes
+/*******************/
+
+h1, .h1 {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+h2, .h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+h3, .h3 {
+  font-size: 2rem;
+}

@@ -1,0 +1,28 @@
+/********************
+/ Colours
+/
+/ Use http://www.colorhexa.com/ for creating meaningful colour
+/ variable names and prefix with main usage (brand, accent)
+/*******************/
+
+$color-brand--red          	: #E51B24;
+$color-brand--yellow				: #FFD800;
+
+$color-shade--dark-grey     : #58585B;
+$color-shade--light-grey    : #E5E5E5;
+
+$black  : #000000;
+$white  : #ffffff;
+
+/********************
+/ Fonts
+/*******************/
+
+$font-color--base     : $black;
+$font-family--base    : 'Merriweather', serif;
+$font-family--heading : 'GA-heading', sans-serif;
+
+$font-weight--thin         : 100;
+$font-weight--regular      : 400;
+$font-weight--thick        : 600;
+$font-weight--v-thick      : 700;
