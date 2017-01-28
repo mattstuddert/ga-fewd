@@ -43,11 +43,18 @@ p, li {
 }
 
 ul {
+  font-size: 2rem;
   padding: 0;
 
   &.no-margin {
     li {
       margin: 0;
+    }
+  }
+
+  &.link-list {
+    a {
+      color: $color-brand--red;
     }
   }
 
@@ -72,7 +79,6 @@ ul {
 
   a {
     color: $black;
-    font-size: 2rem;
     text-decoration: none;
 
     &:hover {
