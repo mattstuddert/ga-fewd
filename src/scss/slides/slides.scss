@@ -12,11 +12,25 @@
 
   .content {
     font-family: $font-family--base !important;
+    font-size: 2rem;
+
+    h2 {
+      font-size: 4rem;
+      margin: 0.4em 0;
+    }
+  }
+
+  a {
+    color: $color-brand--red;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
 .instructor {
   font-weight: $font-weight--v-thick !important;
   display: inline-block;
-  margin: 1em 0 !important;
+  margin: 2em 0 !important;
 }
