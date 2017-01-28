@@ -22,7 +22,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: $font-family--heading;
+  font-family: $font-family--heading !important;
   margin-top: 0;
 	text-transform: uppercase;
 }
@@ -31,16 +31,19 @@ h6, .h6 {
 / Font Sizes
 /*******************/
 
-h1, .h1 {
-  font-size: 5rem;
-  line-height: 1;
-}
+.reveal {
+  h1, .h1 {
+    font-size: 10rem;
+    line-height: 1;
+    margin: 0.1em 0;
+  }
 
-h2, .h2 {
-  font-size: 3rem;
-  line-height: 1.1;
-}
+  h2, .h2 {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
 
-h3, .h3 {
-  font-size: 2rem;
+  h3, .h3 {
+    font-size: 2rem;
+  }
 }

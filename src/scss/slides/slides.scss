@@ -1,0 +1,22 @@
+.reveal .slides {
+  .slide-header {
+  	border-bottom: 2px solid $black;
+  	border-top: 2px solid $black;
+  	padding: 0.25em 0;
+
+  	h2 {
+  		font-size: 1.1rem;
+  		margin: 0;
+  	}
+  }
+
+  .content {
+    font-family: $font-family--base !important;
+  }
+}
+
+.instructor {
+  font-weight: $font-weight--v-thick !important;
+  display: inline-block;
+  margin: 1em 0 !important;
+}

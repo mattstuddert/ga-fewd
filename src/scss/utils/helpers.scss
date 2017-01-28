@@ -1,3 +1,11 @@
 .u-text--centered {
   text-align: center;
 }
+
+.u-bg--black {
+  background-color: $black !important;
+
+  .slide-header {
+    border-color: $white !important;
+  }
+}
