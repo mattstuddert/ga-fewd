@@ -22,7 +22,11 @@ html {
   color: $font-color--base;
   font-size: 16px;
   font-weight: $font-weight--thick;
-  line-height: 1.8;
+}
+
+body {
+	line-height: 1.5;
+	overflow: auto;
 }
 
 /********************
@@ -43,6 +47,7 @@ p, li {
 }
 
 ul {
+	font-family: $font-family--base !important;
   font-size: 2rem;
   padding: 0;
 
