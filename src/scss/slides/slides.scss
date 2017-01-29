@@ -16,7 +16,7 @@
     font-size: 2rem;
 		line-height: 1.5 !important;
 
-    h2 {
+    h2:not(.h1) {
       font-size: 4rem;
       margin: 0.4em 0;
     }
