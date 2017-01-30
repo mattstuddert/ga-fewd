@@ -8,6 +8,12 @@
     box-shadow: none;
     display: inherit;
     margin: 0;
+
+		&.inline-img {
+			display: inline !important;
+			margin: 0 !important;
+			vertical-align: middle;
+		}
   }
 
   ul {
