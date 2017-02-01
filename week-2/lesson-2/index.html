@@ -23,11 +23,704 @@
 
 				<section>
 				  <div class="slide-header">
-            <h2>Box Model Review</h2>
+            <h2>Review</h2>
 				  </div>
 
           <div class="content">
             <h2 class="h1">What did you learn last lesson?</h2>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Default browser styles</h2>
+
+            <p>
+              Browsers typically have default styles that they apply to certain
+              elements. Unfortunately, these styles are sometimes different for
+              each browser.
+            </p>
+            <p>
+              This means that if you are not 'normalising' your styles before
+              starting to write code, you may run into difficulties making everything
+              look the same across browsers.
+            </p>
+            <p>
+              Time to level the playing field!
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Normalize.css vs reset.css</h2>
+
+            <p>
+              <a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a>
+              maintains some common default styles for certain elements (heading sizes etc),
+              but normalises necessary styles across all browsers.
+            </p>
+            <p>
+              <a href="http://meyerweb.com/eric/tools/css/reset/" target="_blank">Reset.css</a> completely
+              resets all elements' styles, so that all elements are starting from
+              the same base level.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Normalize.css vs reset.css</h2>
+            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+            <p>
+              Let's open up an example project to take a peek.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>CSS <code>display</code></h2>
+
+            <p>
+              For the purpose of basic structure and styling, elements typically have some default
+              styles before any code is even written (unless you're using reset.css!).
+            </p>
+            <p>
+              Some elements have more default styles than others, however all elements fall
+              into one of two categories: 'block' or 'inline' elements.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Block-level elements</h2>
+
+            <p>
+              Block-level elements are elements that, when no width is set, will expand
+              to fit the length of their container. This means they'll try to occupy
+              the whole row...they're greedy!
+            </p>
+            <p>
+              Block-level elements have the following characteristics:
+            </p>
+            <ul>
+              <li class="fragment">
+                When no <code>width</code> is set, will expand to the width of its container.
+              </li>
+              <li class="fragment">
+                <code>margin</code> and <code>padding</code> push elements away
+                both horizontally AND vertically.
+              </li>
+              <li class="fragment">
+                Ignores the <code>vertical-align</code> rule.
+              </li>
+            </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Block-level element examples</h2>
+
+            <p>
+              <code>&lt;div&gt;, &lt;section&gt;, &lt;header&gt;,
+              &lt;footer&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;table&gt;, &lt;fieldset&gt;, &lt;figure&gt;, &lt;aside&gt;,
+              &lt;article&gt;, &lt;nav&gt;, &lt;blockquote&gt;</code>
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Inline elements</h2>
+
+            <p>
+              Inline elements fit perfectly in the flow of content and allow multiple
+              elements on a row. This makes them perfect for use within content.
+              They're also useful when you want elements to sit
+              next to each other on a row.
+            </p>
+            <p>
+              Inline elements have they following characteristics:
+            </p>
+            <ul>
+              <li class="fragment">
+								Sit in the flow of content.
+							</li>
+              <li class="fragment">
+                <code>margin</code> and <code>padding</code> only push elements
+                away horizontally.
+              </li>
+              <li class="fragment">
+                Are subject to <code>vertical-align</code>.
+              </li>
+              <li class="fragment">
+                Do not respond to set  <code>height</code> or <code>width</code>.
+              </li>
+            </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Inline element examples</h2>
+
+            <p>
+              <code>
+                &lt;span&gt;, &lt;em&gt;, &lt;i&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;img&gt;, &lt;a&gt;, &lt;input&gt;, &lt;button&gt;,
+                &lt;label&gt;, &lt;select&gt;, &lt;abbr&gt;, &lt;textarea&gt;
+              </code>
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Codepen</h2>
+
+            <p>
+              Let's create a quick <a href="http://codepen.io/" target="_blank">pen</a> together
+              to go through the difference.
+            </p>
+            <p>
+              And to also take a look at the 'hybrid' display property of <code>inline-block</code>.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Inline-block elements</h2>
+
+            <p>
+              As we saw in the example, elements with <code>display: inline-block;</code>
+              contain characteristics from both block-level and inline elements.
+            </p>
+            <p>
+              Here's a breakdown of those characteristics:
+            </p>
+            <ul>
+              <li class="fragment">
+								Sit in the flow of content, if no margins or padding have been set.
+							</li>
+              <li class="fragment">
+                <code>margin</code> and <code>padding</code> push elements away
+                both horizontally AND vertically.
+              </li>
+              <li class="fragment">
+                Are subject to <code>vertical-align</code>.
+              </li>
+              <li class="fragment">
+                Responds to set  <code>height</code> and <code>width</code>.
+              </li>
+            </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Hiding elements</h2>
+            <p>
+              Sometimes we might want to hide elements on the page. An example of
+              one of these times might be when there is a dropdown menu that we want
+              to hide until the user hovers over a menu item.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>display: none;</code> vs <code>visibility: hidden;</code></h2>
+
+            <p>
+              When elements are inserted into the DOM Tree, they are being 'parsed'. But
+              before they are actually placed on the page, they need to be 'rendered'.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>display: none;</code></h2>
+
+            <p>
+              Elements with <code>display: none;</code> are parsed, but not rendered. Meaning
+              that surrounding elements act like there is no element present.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>visibility: hidden;</code></h2>
+
+            <p>
+              Elements with <code>visibility: hidden;</code> are parsed AND rendered. This
+              means that the hidden element still occupies the space it otherwise would have.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Codepen example</h2>
+            <p>
+              Click <a href="http://codepen.io/stooderrr/pen/WxbLZB" target="_blank">here</a>
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Positioning</h2>
+
+            <p>
+              Having a good understanding of CSS positioning is crucial for effective
+              layout of a page. However, it is an often misunderstood property, that
+              can quickly cause issues if used incorrectly.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Position properties</h2>
+
+            <p>
+              The position property can have one of 5 possible values:
+            </p>
+            <ul>
+              <li>Static (default)</li>
+              <li>Relative</li>
+              <li>Absolute</li>
+              <li>Fixed</li>
+              <li>Sticky (little support)</li>
+            </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>position: static;</code></h2>
+
+            <p>
+              This position declaration is the default value on all elements, if no
+              other position value has been set. It contains the following characteristics:
+            </p>
+            <ul>
+              <li>
+                Element maintains normal behaviour, sitting in the flow of the document.
+              </li>
+              <li>
+                Does not respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+                <code>left</code> or <code>z-index</code> properties.
+              </li>
+            </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>position: relative;</code></h2>
+
+            <ul>
+              <li>
+                If no other properties are set, the element will maintain all normal
+                behviour.
+              </li>
+              <li>
+                Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+                <code>left</code> and <code>z-index</code> properties.
+              </li>
+              <li>
+                If one of these other properties are set, the element will change position
+                on screen, but the original position of the element will remain, as if
+                the element was still there.
+              </li>
+            </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>position: absolute;</code></h2>
+
+            <ul>
+              <li>
+                Pulls the element out of the normal flow of the document. Meaning
+                other elements will fill the space left by the absolutely positioned
+                element.
+              </li>
+              <li>
+                Block-level elements no longer stretch to fill the width of the container.
+              </li>
+              <li>
+                Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+                <code>left</code> and <code>z-index</code> properties.
+              </li>
+              <li>
+                Is positioned relatively to its closest ancestor with a position property
+                other than <code>position: static;</code>.
+              </li>
+            </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>position: fixed;</code></h2>
+
+            <ul>
+              <li>
+                Pulls the element out of the normal flow of the document. Meaning
+                other elements will fill the space left by the fixed position
+                element.
+              </li>
+              <li>
+                Block-level elements no longer stretch to fill the width of the container.
+              </li>
+              <li>
+                Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+                <code>left</code> and <code>z-index</code> properties.
+              </li>
+              <li>
+                Is positioned relatively to the screen's viewport. Will maintain this position on the
+                viewport until another <code>position</code> property is set.
+              </li>
+            </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Codepen example</h2>
+            <p>
+              Click <a href="http://codepen.io/stooderrr/pen/ZOWRgO" target="_blank">here</a>
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>z-index</code></h2>
+
+            <p>
+              The <code>z-index</code> property specifies the z-order of an element
+              and its descendants.
+            </p>
+            <p>
+              This relates to how elements are 'stacked' in the viewport and therefore
+              which elements should appear closer to the user and sit on top of other elements.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>z-index</code> (cont.)</h2>
+
+            <p>
+              Remember, a <code>position</code> value other than <code>static</code> has
+              to be set in order for <code>z-index</code> to work.
+            </p>
+            <p>
+              The <code>z-index</code> value can literally be any number you like. So, as
+              you can imagine, it can get messy very quickly. Always be sure to define a
+              <code>z-index</code> scale for a project to manage this.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Floats</h2>
+
+            <p>
+              The CSS <code>float</code> property takes elements out of the normal flow
+              of the document. The main values are none (default), left and right.
+            </p>
+            <p>
+              When floated left or right, an element will be placed to the given side
+              of its container, where inline elements or content can flow around it.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Codepen example</h2>
+            <p>
+              Click <a href="http://codepen.io/stooderrr/pen/OXNwbe" target="_blank">here</a>
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Clearfix</h2>
+
+            <img src="../../dist/images/week-2/css-clearfix.png" alt="Clearfix code snippet">
+            <p>
+              The <code>clearfix</code> class is always assigned to the PARENT element
+              of floated elements. The styling creates a new block formatting context, which
+              effectively maps out an element's contents. This forces the parent's height
+              to register its floated children's heights again.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Floats for layout</h2>
+            <p>
+              Due to the fact that floated elements allow other content and elements to wrap
+              around them, floats are perfect to use for layouts in CSS.
+            </p>
+            <p>
+              Elements used for structure are always block-level elements. However, when
+              <code>float</code> is applied, they no longer stretch to fill their container.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Codepen example</h2>
+            <p>
+              Click <a href="http://codepen.io/stooderrr/pen/yJOqwo" target="_blank">here</a>
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>clear</code></h2>
+
+            <p>
+              The <code>clear</code> property is directly related to floats. When elements are
+              floated, other subsequent elements may try and fit horizontally beside the floated
+              element. In order to re-position the element correctly a <code>clear</code>
+              property must be assigned.
+            </p>
+            <p>
+              The most commonly used <code>clear</code> declaration is <code>clear: both;</code>
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>clear</code> (cont.)</h2>
+
+            <p>
+              The main values for <code>clear</code> are none, left, right and both:
+            </p>
+            <ul>
+              <li>
+                <strong>none:</strong> the element does not clear past floated elements.
+              </li>
+              <li>
+                <strong>left:</strong> the element clears the left floated elements.
+              </li>
+              <li>
+                <strong>right:</strong> the element clears the right floated elements.
+              </li>
+              <li>
+                <strong>both:</strong> the element clears both right and left floated
+                elements.
+              </li>
+            </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>CSS <code>clear</code> vs <code>.clearfix</code></h2>
+            <p>
+              <code>clear</code> is a CSS property that is placed on an element to drop
+              it below floated elements.
+            </p>
+            <p>
+              <code>clearfix</code> is a class that is placed on a parent element (in the HTML)
+              when its height has collapsed due to its children being floated.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Try some layouts!</h2>
+            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+            <p>
+              Work from the layout-challenge.pdf file and see how far you can get creating
+              the different layouts using what you've learned today.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Grid frameworks</h2>
+            <p>
+              Luckily there are grid frameworks to do all of the hard work for us...
+            </p>
+            <p>
+              ...but that's for a later date!
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Grid frameworks</h2>
+            <p>
+              Luckily there are grid frameworks to do all of the hard work for us...
+            </p>
+            <p>
+              ...but that's for a later date!
+            </p>
           </div>
 				</section>
 
@@ -40,7 +733,31 @@
             <h2>Key Takeaways</h2>
 
 						<ul>
-
+							<li>
+								<p>
+									We use normalize.css or reset.css to normalise default browser styles
+								</p>
+							</li>
+							<li>
+								<p>
+									Elements can either be block-level elements or inline elements. There
+									is also a third <code>display</code> property of <code>inline-block</code>
+									that acts as a hybrid.
+								</p>
+							</li>
+							<li>
+								<p>
+									The <code>position</code> property is used to change the position of
+									elements to either <code>static</code>, <code>relative</code>,
+									<code>absolute</code> or <code>fixed</code>
+								</p>
+							</li>
+							<li>
+								<p>
+									Floats are often used for layout purposes, but beware the effect they
+									can have on their parent container
+								</p>
+							</li>
 						</ul>
           </div>
 				</section>
