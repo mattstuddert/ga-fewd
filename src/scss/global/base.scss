@@ -76,8 +76,7 @@ ul {
       border-width: 10px 0 10px 10px;
       border-color: transparent transparent transparent $black;
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      top: calc(0.5em - 2px);
       left: 0;
     }
   }
@@ -89,12 +88,6 @@ ul {
     &:hover {
       text-decoration: underline;
     }
-  }
-}
-
-ol {
-  li {
-    list-style-position: inside;
   }
 }
 
