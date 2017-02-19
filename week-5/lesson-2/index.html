@@ -16,7 +16,7 @@
 				  </div>
 
           <div class="content">
-            <h1></h1>
+            <h1>Intro to jQuery</h1>
 						<span class="instructor">Matt Studdert</span>
           </div>
 				</section>
@@ -31,6 +31,443 @@
           </div>
 				</section>
 
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>JavaScript downsides</h2>
+            <p>
+              JavaScript offers incredible flexibility as a programming language. Although
+              that flexibility and the fact that it was initially created in 10 days
+              means that it also has numerous bad parts (leading to a book called
+              <a href="https://www.amazon.co.uk/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742" target="_blank">'JavaScript: The Good Parts'</a>).
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>JavaScript libraries</h2>
+            <p>
+              To address certain downsides of the JavaScript language and to add
+              convenient functionality, new JavaScript libraries began to emerge.
+            </p>
+            <p>
+              jQuery quickly took its place as the most highly used library, initially
+              due to its cross-browser compatibility.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>What is jQuery?</h2>
+            <p>
+              jQuery is a JavaScript library created by John Resig (released in 2006).
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>jQuery benefits</h2>
+
+            <ol>
+              <li>
+                Cleaner and more intuitive syntax
+              </li>
+              <li>
+                Easier DOM traversal (filtering target elements)
+              </li>
+              <li>
+                Additional methods for simple DOM manipulation (e.g. adding/removing classes)
+              </li>
+              <li>
+                Easy animation of elements and window (e.g. fading out an element, scrolling to a target element)
+              </li>
+              <li>
+                AJAX - send and receive data from the server without refreshing the page
+              </li>
+              <li>
+                Great plugin ecosystem for rapid development
+              </li>
+            </ol>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Including jQuery</h2>
+
+            <ol>
+              <li>
+                Download the <a href="https://jquery.com/download/" target="_blank">source code</a>
+                <img src="../../dist/images/week-5/including-jquery.png" alt="Including jQuery example">
+              </li>
+              <li>
+                Use a Content Delivery Network (CDN) (<a href="https://cdnjs.com/" target="_blank">https://cdnjs.com/</a>)
+                <img src="../../dist/images/week-5/including-jquery-cdn.png" alt="Including jQuery example">
+              </li>
+            </ol>
+            <p>
+              Be sure to include your JavaScript file AFTER you include jQuery!
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>$</h2>
+
+            <p>
+              The jQuery library gives access to the <code>jQuery</code> function, which
+              allows use of all the jQuery functionality.
+            </p>
+            <img src="../../dist/images/week-5/jquery-long.png" alt="jQuery function example">
+            <p>
+              Developers are lazy though, so it was shortened to <code>$</code>.
+            </p>
+            <img src="../../dist/images/week-5/jquery-short.png" alt="jQuery function example">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Document ready</h2>
+
+            <p>
+              Before we can start interacting with elements using jQuery, we need to
+              make sure that the elements are actually available in the DOM.
+            </p>
+            <img src="../../dist/images/week-5/jquery-ready-long.png" alt="Document ready example">
+            <p>
+              But this can also be shortened to:
+            </p>
+            <img src="../../dist/images/week-5/jquery-ready-short.png" alt="Document ready example">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>jQuery selector syntax</h2>
+
+            <p>
+              Using vanilla JavaScript, the code to select elements is pretty verbose:
+            </p>
+            <img src="../../dist/images/week-5/js-selector-syntax.png" alt="Vanilla JavaScript selector syntax">
+            <p>
+              Whereas with jQuery it is much simpler (recognise the selectors?):
+            </p>
+            <img src="../../dist/images/week-5/jquery-selector-syntax.png" alt="jQuery selector syntax">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Remember the 3 steps to building interactivity?</h2>
+            <ol>
+              <li>Event target (find an element(s) that will trigger an action)</li>
+              <li>Event listener (listen for that action)</li>
+              <li>Event handler (perform an output as a result of that action)</li>
+            </ol>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Events</h2>
+
+            <p>
+              Events and making them easy to implement are the bread and butter of jQuery:
+            </p>
+            <img src="../../dist/images/week-5/jquery-events.png" alt="jQuery events examples">
+            <p>
+              A full list of jQuery's events can be found <a href="https://api.jquery.com/category/events/" target="_blank">here</a>.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>event.preventDefault()</code></h2>
+
+            <p>
+              Some elements have default actions that they perform when interacted with.
+              The two most common examples of this are:
+            </p>
+            <ul>
+              <li>
+                <code>&lt;a href="/path"&gt;Link Text&lt;/a&gt;</code> anchor tags - they want
+                to redirect to the given path
+              </li>
+              <li>
+                <code>&lt;button&gt;Button Text&lt;/button&gt;</code> button tags - they want to
+                submit a form (if they have a form as an ancestor)
+              </li>
+            </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>event.preventDefault()</code> (cont.)</h2>
+
+            <p>
+              When an event listener is created, an event object becomes available
+              within the handler function. This allows access to more information and
+              actions relating to the event. The method we are interested in here is:
+            </p>
+            <img src="../../dist/images/week-5/jquery-preventdefault.png" alt="jQuery event.preventDefault() method example">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>DOM manipulation</h2>
+
+            <p>
+              jQuery allows us to easily change the contents of the DOM and also
+              change the appearance of DOM nodes (elements) in response to an event.
+              Here are a few of the most common DOM manipulation methods:
+            </p>
+            <img src="../../dist/images/week-5/dom-manipulation.png" alt="DOM manipulation methods">
+            <p>
+              A full list of DOM manipulation methods can be found <a href="http://api.jquery.com/category/manipulation/" target="_blank">here</a>.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>DOM traversal</h2>
+
+            <p>
+              DOM traversal is effectively the filtering of elements through a given
+              set of parameters and is especially useful when combined with 'this'.
+            </p>
+            <p>
+              Here are some examples of traversal methods:
+            </p>
+            <img src="../../dist/images/week-5/dom-traversal.png" alt="DOM traversal examples">
+            <p>
+              A full list of jQuery's DOM traversal methods can be found <a href="http://api.jquery.com/category/traversing/" target="_blank">here</a>.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>jQuery animation</h2>
+
+            <p>
+              Another benefit of using jQuery over vanilla JavaScript is the ability
+              to easily add animation to elements:
+            </p>
+            <img src="../../dist/images/week-5/dom-effects.png" alt="jQuery effects examples">
+            <p>
+              A full list of jQuery's effects methods can be found <a href="https://api.jquery.com/category/effects/" target="_blank">here</a>.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>AJAX</h2>
+
+            <p>
+              Asynchronous JavaScript and XML (AJAX) allows for the sending and
+              receiving of data to and from a server, enabling a page's display
+              to update without the need for a full window reload.
+            </p>
+            <p>
+              The data being sent and received is usually in the form of JavaScript Object
+              Notation (JSON), so we should actually be referring to it as AJAJ.
+            </p>
+            <p>
+              If you would like to learn more about AJAX, this <a href="https://www.sitepoint.com/use-jquerys-ajax-function/" target="_blank">Sitepoint</a>
+              article is a good starting point.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>FAQ section</h2>
+            <img src="../../dist/images/ga/ga-code-along-icon.png" alt="General Assembly code along icon">
+            <p>
+              Using <a href="http://codepen.io/stooderrr/pen/zBNMxQ" target="_blank">Codepen</a>
+              let's create a typical FAQ section that you might find on a website.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Keyword 'this'</h2>
+            <p>
+              While creating that FAQ page, we came across a new JavaScript keyword. When
+              relating to interactivity, <code>$(this)</code> will return a jQuery object
+              of the target element that has been interacted with.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Keyword 'this' (cont.)</h2>
+            <img src="../../dist/images/week-5/jquery-this.png" alt="jQuery this keyword example">
+            <img src="../../dist/images/week-5/jquery-html.png" alt="jQuery this keyword example">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Keyword 'this' (cont.)</h2>
+
+            <p>
+              In JavaScript, 'this' can change reference based on where it is written.
+              For a full reference please refer to this <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/this" target="_blank">MDN</a>
+              article.
+            </p>
+            <p>
+              For how we are using JavaScript though, we will be using 'this' to
+              return the target element in an interaction.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Chaining</h2>
+
+            <p>
+              Another concept we saw in the FAQ example was method chaining. This is a great way to
+              reduce the amount of code written and increase readability.
+            </p>
+            <img src="../../dist/images/week-5/jquery-chaining.png" alt="jQuery method chaining example">
+            <p>
+              Chain methods wherever possible to write cleaner code.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Code Quality</h2>
+
+            <p>
+              Especially when you're starting out, it can be hard to know whether you
+              are writing your JavaScript in the correct way.
+						</p>
+
+						<p>
+							Tools such as <a href="http://jshint.com/" target="_blank">JSHint</a>
+              and <a href="http://www.jslint.com/" target="_blank">JSLint</a>
+              help provide warnings in your text editor if you have any syntax errors.
+						</p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+            <p>
+              Have a go at writing the traffic light switcher again, but this time
+              using jQuery.
+            </p>
+          </div>
+				</section>
+
         <section>
 				  <div class="slide-header">
             <h2>Review</h2>
@@ -39,6 +476,31 @@
           <div class="content">
             <h2>Key Takeaways</h2>
 
+						<ul>
+							<li>
+								<p>
+									jQuery is a JavaScript library that was released in 2006
+								</p>
+							</li>
+							<li>
+								<p>
+									jQuery improves the syntax of JavaScript to make it easier
+									to target elements and handle user interactions
+								</p>
+							</li>
+							<li>
+								<p>
+									jQuery selectors are the same as selectors used when styling
+									elements in CSS
+								</p>
+							</li>
+							<li>
+								<p>
+									The keyword 'this' can be used to target actions on the specific
+									element the user has interacted with
+								</p>
+							</li>
+						</ul>
           </div>
 				</section>
 			</div>
