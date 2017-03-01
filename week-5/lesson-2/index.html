@@ -188,7 +188,7 @@
             <p>
               Whereas with jQuery it is much simpler (recognise the selectors?):
             </p>
-            <img src="../../dist/images/week-5/jquery-selector-syntax.png" alt="jQuery selector syntax">
+            <img class="fragment" src="../../dist/images/week-5/jquery-selector-syntax.png" alt="jQuery selector syntax">
           </div>
 				</section>
 
@@ -235,7 +235,7 @@
 
             <p>
               Some elements have default actions that they perform when interacted with.
-              The two most common examples of this are:
+              The 3 most common examples of this are:
             </p>
             <ul>
               <li>
@@ -245,6 +245,10 @@
               <li>
                 <code>&lt;button&gt;Button Text&lt;/button&gt;</code> button tags - they want to
                 submit a form (if they have a form as an ancestor)
+              </li>
+							<li>
+                <code>&lt;form&gt;&lt;/form&gt;</code> forms - when they submit, they refresh the
+								page
               </li>
             </ul>
           </div>
@@ -293,18 +297,15 @@
 				  </div>
 
           <div class="content">
-						<h2>DOM traversal</h2>
+						<h2>jQuery animation</h2>
 
             <p>
-              DOM traversal is effectively the filtering of elements through a given
-              set of parameters and is especially useful when combined with 'this'.
+              Another benefit of using jQuery over vanilla JavaScript is the ability
+              to easily add animation to elements:
             </p>
+            <img src="../../dist/images/week-5/dom-effects.png" alt="jQuery effects examples">
             <p>
-              Here are some examples of traversal methods:
-            </p>
-            <img src="../../dist/images/week-5/dom-traversal.png" alt="DOM traversal examples">
-            <p>
-              A full list of jQuery's DOM traversal methods can be found <a href="http://api.jquery.com/category/traversing/" target="_blank">here</a>.
+              A full list of jQuery's effects methods can be found <a href="https://api.jquery.com/category/effects/" target="_blank">here</a>.
             </p>
           </div>
 				</section>
@@ -315,15 +316,10 @@
 				  </div>
 
           <div class="content">
-						<h2>jQuery animation</h2>
-
+						<h2>jQuery Exercise</h2>
+            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
             <p>
-              Another benefit of using jQuery over vanilla JavaScript is the ability
-              to easily add animation to elements:
-            </p>
-            <img src="../../dist/images/week-5/dom-effects.png" alt="jQuery effects examples">
-            <p>
-              A full list of jQuery's effects methods can be found <a href="https://api.jquery.com/category/effects/" target="_blank">here</a>.
+              In pairs, go through the jQuery exercise steps.
             </p>
           </div>
 				</section>
@@ -410,6 +406,28 @@
             <p>
               For how we are using JavaScript though, we will be using 'this' to
               return the target element in an interaction.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Intro to jQuery</h2>
+				  </div>
+
+          <div class="content">
+						<h2>DOM traversal</h2>
+
+            <p>
+              DOM traversal is effectively the filtering of elements through a given
+              set of parameters and is especially useful when combined with 'this'.
+            </p>
+            <p>
+              Here are some examples of traversal methods:
+            </p>
+            <img src="../../dist/images/week-5/dom-traversal.png" alt="DOM traversal examples">
+            <p>
+              A full list of jQuery's DOM traversal methods can be found <a href="http://api.jquery.com/category/traversing/" target="_blank">here</a>.
             </p>
           </div>
 				</section>
