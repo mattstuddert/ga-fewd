@@ -2,8 +2,9 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
 		<title>FEWD | Lesson 13</title>
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
@@ -97,7 +98,8 @@
 							<li>
 								<p>
 									Because of it's fixed nature, pixels are often used when deciding which
-									unit to add to declarations such as width, height, margin, padding etc.
+									unit to add to declarations such as <code>width</code>, <code>height</code>,
+									<code>margin</code>, <code>padding</code> etc.
 								</p>
 							</li>
 						</ul>
@@ -152,7 +154,7 @@
 				  </div>
 
           <div class="content">
-  					<h2>Responsive/Adapative Layout Features</h2>
+  					<h2>Responsive/Adaptive Layout Features</h2>
 						<ul>
 							<li>
 								<p>
@@ -250,8 +252,13 @@
 
           <div class="content">
 						<div class="content">
-							<img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly code along icon">
+							<img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
 							<h2>Codepen Example</h2>
+							<p>
+								Re-define the widths for the <code>main</code> and <code>aside</code> elements as percentages.
+								Also, change the <code>margin-right</code> on the <code>main</code> tag to
+								the correct percentage.
+							</p>
 	            <p>Click <a href="http://codepen.io/stooderrr/pen/gmWmPO" target="_blank">here</a></p>
 	          </div>
           </div>
@@ -397,11 +404,10 @@
 
 				<section>
 				  <div class="slide-header">
-            <h2>Responsive Basics</h2>
+            <h2>Alternative Media Features</h2>
 				  </div>
 
           <div class="content">
-  					<h2>Alternative Media Features</h2>
 						<ul>
 							<li>
 								<code>orientation</code>
@@ -413,7 +419,7 @@
 							</li>
 							<li>
 								<code>pixel-ratio</code>, <code>device-pixel-ratio</code>
-								<img src="../../dist/images/week-7/media-pixel-ration.png" alt="Media query pixel ratio example">
+								<img src="../../dist/images/week-7/media-pixel-ratio.png" alt="Media query pixel ratio example">
 							</li>
 							<li>
 								<code>resolution</code>
@@ -506,8 +512,12 @@
 
           <div class="content">
 						<div class="content">
-							<img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly code along icon">
+							<img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
 							<h2>Codepen Example</h2>
+							<p>
+								With a mobile first approach, get the main and aside to stack on mobile
+								and snap to two columns at 650px.
+							</p>
 	            <p>Click <a href="http://codepen.io/stooderrr/pen/gmWmPO" target="_blank">here</a></p>
 	          </div>
           </div>
@@ -519,7 +529,12 @@
 				  </div>
 
           <div class="content">
-            <h2>Foundation Grid</h2>
+            <h2>Viewport Meta</h2>
+						<p>
+							If you are building your site to be responsive, it is crucial to use
+							the following <code>meta</code> tag:
+						</p>
+						<img src="../../dist/images/week-7/viewport-meta.png" alt="Example of viewport meta tag for responsive sites">
           </div>
 				</section>
 
@@ -530,7 +545,71 @@
 
           <div class="content">
   					<h2>Mobile Considerations</h2>
+						<ul>
+							<li class="fragment">High colour contrast</li>
+							<li class="fragment">Smaller <code>font-size</code></li>
+							<li class="fragment">Larger touch points</li>
+							<li class="fragment">Mobile optimised/smaller images</li>
+							<li class="fragment">No hover states</li>
+						</ul>
+          </div>
+				</section>
 
+				<section>
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+  					<h2>Responsive Media</h2>
+						<p>
+							The following snippet will make all media adapt to smaller screen
+							sizes, regardless of their original size:
+						</p>
+						<img src="../../dist/images/week-7/responsive-media.png" alt="Responsive media example">
+          </div>
+				</section>
+
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+            <h2 class="h1">Layout Grid</h2>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+            <h2>Foundation Grid</h2>
+						<p>
+							An easy solution to get you up and running with grids quickly is
+							<a href="http://foundation.zurb.com/grid.html" target="_blank">Foundation Grid</a>.
+						</p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+						<img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+            <h2>Foundation Grid Lab</h2>
+						<p>
+							Have a play around with the example Foundation Grid and try to
+							create the most ridiculous layout you can.
+						</p>
+						<p>
+							<strong>Bonus:</strong> Link to random images on the web and include them as background
+							images on certain elements as you reach a certain breakpoint.
+						</p>
           </div>
 				</section>
 
@@ -543,7 +622,28 @@
             <h2>Key Takeaways</h2>
 
 						<ul>
-
+							<li>
+								<p>
+									Responsive design is a crucial aspect of the modern web.
+								</p>
+							</li>
+							<li>
+								<p>
+									Designing and building mobile first is a preferable workflow for
+									creating great web experiences at every screen size.
+								</p>
+							</li>
+							<li>
+								<p>
+									Relative units are great to use when building a responsive site.
+								</p>
+							</li>
+							<li>
+								<p>
+									Consider changing your media depending on the user's screen size. For
+									example, smaller images for mobile.
+								</p>
+							</li>
 						</ul>
           </div>
 				</section>
