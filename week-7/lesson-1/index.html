@@ -2,6 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<title>FEWD | Lesson 13</title>
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
@@ -248,7 +250,7 @@
 
           <div class="content">
 						<div class="content">
-							<img src="../../dist/images/ga/ga-code-along-icon.png" alt="General Assembly code along icon">
+							<img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly code along icon">
 							<h2>Codepen Example</h2>
 	            <p>Click <a href="http://codepen.io/stooderrr/pen/gmWmPO" target="_blank">here</a></p>
 	          </div>
@@ -345,8 +347,169 @@
 				  </div>
 
           <div class="content">
-  					<h2>Mobile First vs Desktop First</h2>
+  					<h2>Media Features</h2>
+						<p>
+							The most common conditions used in media queries are to do with media
+							features. They include <code>height</code>, <code>width</code>,
+							<code>device-height</code>, and <code>device-width</code>.
+						</p>
+						<p>
+							These media features can be prefixed with <code>min</code> or <code>max</code>
+							to determine range.
+						</p>
+          </div>
+				</section>
 
+				<section>
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+  					<h2>Using min and max</h2>
+						<ul>
+							<li>
+								<p>
+									<code>min</code> defines values that are equal to or greater than
+									the given value.
+								</p>
+							</li>
+							<li>
+								<p>
+									<code>max</code> defines values that are equal to or less than the
+									given value.
+								</p>
+							</li>
+						</ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+  					<h2>Min/Max examples</h2>
+						<img src="../../dist/images/week-7/media-min-max.png" alt="Media query min/max example">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+  					<h2>Alternative Media Features</h2>
+						<ul>
+							<li>
+								<code>orientation</code>
+								<img src="../../dist/images/week-7/media-orientation.png" alt="Media query orientation example">
+							</li>
+							<li>
+								<code>aspect-ratio</code>, <code>device-aspect-ratio</code>
+								<img src="../../dist/images/week-7/media-aspect-ratio.png" alt="Media query aspect ratio example">
+							</li>
+							<li>
+								<code>pixel-ratio</code>, <code>device-pixel-ratio</code>
+								<img src="../../dist/images/week-7/media-pixel-ration.png" alt="Media query pixel ratio example">
+							</li>
+							<li>
+								<code>resolution</code>
+								<img src="../../dist/images/week-7/media-resolution.png" alt="Media query resolution example">
+							</li>
+						</ul>
+          </div>
+				</section>
+
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+  					<h2 class="h1">Defining breakpoints</h2>
+          </div>
+				</section>
+
+				<section class="u-bg-black">
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+  					<h2 class="h1">Mobile First vs Desktop First</h2>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+  					<h2>Desktop First</h2>
+						<p>
+							A desktop first approach styles all desktop styles and then adds
+							tablet/mobile styles inside <code>max-width</code> media queries.
+						</p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+  					<h2>Mobile First</h2>
+						<p>
+							A mobile first approach defines mobile styles outside of the media
+							queries and progressively loads in styles for larger screens using
+							the <code>min-width</code> declaration.
+						</p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+  					<h2>Mobile First Benefits</h2>
+						<ul>
+							<li class="fragment">
+								Progressively load in styles for larger screens, saving bandwith
+							</li>
+							<li class="fragment">
+								Forces consideration of mobile users from day one
+							</li>
+							<li class="fragment">
+								Forces designer to define a clear content hierarchy
+							</li>
+							<li class="fragment">
+								Control the loading of larger assets for desktop
+							</li>
+							<li class="fragment">
+								Easier to work mobile-out as a developer
+							</li>
+						</ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Responsive Basics</h2>
+				  </div>
+
+          <div class="content">
+						<div class="content">
+							<img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly code along icon">
+							<h2>Codepen Example</h2>
+	            <p>Click <a href="http://codepen.io/stooderrr/pen/gmWmPO" target="_blank">here</a></p>
+	          </div>
           </div>
 				</section>
 
