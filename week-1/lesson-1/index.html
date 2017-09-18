@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
 		<title>FEWD | Lesson 1</title>
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
@@ -44,13 +44,13 @@
             <p>For this course you will need:</p>
 
             <ul>
-              <li>A <a href="https://www.schoology.com/" target="_blank">Schoology</a> account</li>
-              <li><a href="https://www.sublimetext.com/" target="_blank">Sublime</a> text editor</li>
-              <li><a href="https://slack.com/downloads" target="_blank">Slack App</a></li>
-              <li>A <a href="https://github.com/" target="_blank">Github</a> account</li>
-              <li>The <a href="https://desktop.github.com/" target="_blank">Github Desktop App</a></li>
-              <li>A <a href="http://codepen.io/" target="_blank">Codepen</a> account</li>
-              <li>A <a href="http://macdown.uranusjr.com/" target="_blank">markdown</a> editor</li>
+              <li class="fragment">A <a href="https://www.schoology.com/" target="_blank">Schoology</a> account</li>
+              <li class="fragment"><a href="https://www.sublimetext.com/" target="_blank">Sublime</a> text editor</li>
+              <li class="fragment"><a href="https://slack.com/downloads" target="_blank">Slack App</a></li>
+              <li class="fragment">A <a href="https://github.com/" target="_blank">Github</a> account</li>
+              <li class="fragment">The <a href="https://desktop.github.com/" target="_blank">Github Desktop App</a></li>
+              <li class="fragment">A <a href="http://codepen.io/" target="_blank">Codepen</a> account</li>
+              <li class="fragment">A <a href="http://macdown.uranusjr.com/" target="_blank">markdown</a> editor</li>
             </ul>
           </div>
         </section>
@@ -89,6 +89,16 @@
           </div>
 				</section>
 
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <img class="logo" src="../../dist/images/ga/ga-logo-text.png" alt="General Assembly logo">
+				  </div>
+
+          <div class="content">
+            <h2 class="h1">How does the web work?</h2>
+          </div>
+				</section>
+
         <section>
 				  <div class="slide-header">
             <h2>Intro</h2>
@@ -106,34 +116,29 @@
               </li>
               <li>
                 <p>
-                  70s - Transmission Control Protocol and Internet Protocol (referred)
-                  to as TCP/IP created to allow the separate mini-networks to communicate
-                  with each other.
+                  70s - Transmission Control Protocol and Internet Protocol (TCP/IP)
+									created to allow separate mini-networks to communicate with each other.
                 </p>
               </li>
               <li>
                 <p>
                   90s - Tim Berners-Lee introduces the World Wide Web, which allows information
-                  to be freely accessible by anyone with a network connection
+                  to be freely accessible by anyone with a network connection using HTTP
                 </p>
               </li>
             </ul>
           </div>
 				</section>
 
-        <section>
+				<section>
 				  <div class="slide-header">
             <h2>Intro</h2>
 				  </div>
 
           <div class="content">
-            <h2>Wayback Machine</h2>
+            <h2>Hypertext Transfer Protocol (HTTP)</h2>
 
-            <p>
-              Travel back in time and see what your favourite sites looked like
-              when they were first launched by checking out the
-              <a href="https://archive.org/web/" target="_blank">Way Back Machine</a>
-            </p>
+						<img src="../../dist/images/week-1/http-diagram.png" alt="Diagram of how hypertext transfer protocol works">
           </div>
 				</section>
 
@@ -143,33 +148,9 @@
 				  </div>
 
           <div class="content">
-            <h2>How it all works</h2>
+            <h2>How the web works</h2>
 
-            <ol>
-              <li>
-                <p>Request is made from the client (laptop/computer) to view a page.</p>
-              </li>
-              <li>
-                <p>Routers direct the request to the necessary server.</p>
-              </li>
-              <li>
-                <p>
-                  The server deals with the request and sends back a response in a
-                  series of 'packets'. Each packet is sent on the quickest route
-                  possible (not always the same) to reach the computer.
-                </p>
-              </li>
-              <li>
-                <p>
-                  As these packets can arrive at different times, each one contains
-                  instructions for the computer in order to put them back together to
-                  create the web page.
-                </p>
-              </li>
-              <li>
-                <p>The browser then renders the web page.</p>
-              </li>
-            </ol>
+						<img src="../../dist/images/week-1/how-web-works.png" alt="Diagram of how the web works">
           </div>
 				</section>
 
@@ -182,7 +163,7 @@
             <h2>Languages</h2>
 
             <p>
-              We need languages that to enable us to view these pages and the
+              We need languages to enable us to view these pages and the
               different media types on them.
             </p>
           </div>
@@ -290,17 +271,123 @@
           </div>
 				</section>
 
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <h2>HTML</h2>
+				  </div>
+
+          <div class="content">
+            <h2 class="h1">HTML Elements</h2>
+          </div>
+				</section>
+
         <section>
 				  <div class="slide-header">
             <h2>HTML</h2>
 				  </div>
 
           <div class="content">
-            <h2>HTML tags</h2>
+            <h2>HTML base setup</h2>
             <p>
-              Here are a small selection of HTML tags:
+              Any HTML document requires some basic structure to be considered
+							valid. This includes a <code>&lt;head&gt;</code> tag and a
+							<code>&lt;body&gt;</code> tag.
             </p>
-            <img src="../../dist/images/week-1/html-tag-examples.png" alt="HTML tag examples">
+            <img class="medium" src="../../dist/images/week-1/html-base.png" alt="HTML basic document setup">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>HTML</h2>
+				  </div>
+
+          <div class="content">
+            <h2>Structural Tags</h2>
+            <p>
+              Provide the structure for the page. These are used to group
+							related content and also provide context for the content within.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>HTML</h2>
+				  </div>
+
+          <div class="content">
+            <h2>Structural Tags</h2>
+            <img class="medium" src="../../dist/images/week-1/html-structural.png" alt="HTML structural tag examples">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>HTML</h2>
+				  </div>
+
+          <div class="content">
+            <h2>Heading tags</h2>
+            <p>
+              Provide a hierarchy for our headings.
+            </p>
+            <img src="../../dist/images/week-1/html-headings.png" alt="HTML heading examples">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>HTML</h2>
+				  </div>
+
+          <div class="content">
+            <h2>Content tags</h2>
+            <p>
+              Other content can be wrapped in specific tags, which provide
+							structure and can also add default styling (without CSS!).
+            </p>
+            <img src="../../dist/images/week-1/html-content.png" alt="HTML content tag examples">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>HTML</h2>
+				  </div>
+
+          <div class="content">
+            <h2>HTML links</h2>
+            <p>
+              Anchor tags are the bedrock of the internet. They are what keep
+							users constantly navigating around looking for new content.
+							The href attribute is what points the link to a specific URL (or file).
+            </p>
+            <img src="../../dist/images/week-1/html-links.png" alt="HTML anchor tag example">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Code Along</h2>
+				  </div>
+
+          <div class="content">
+						<img src="../../dist/images/ga/ga-code-along-icon.png" alt="General Assembly lab icon">
+            <p>
+            	Let's put our newfound knowledge to use building out a HTML press release
+							for General Assembly.
+            </p>
+          </div>
+				</section>
+
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <h2>HTML</h2>
+				  </div>
+
+          <div class="content">
+            <h2 class="h1">HTML5</h2>
           </div>
 				</section>
 
@@ -377,13 +464,12 @@
 
             <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
             <p>
-              Task: complete the full HTML markup for our delicious cookie
-              recipe.
+              Task: In pairs, complete the full HTML markup for our cookie recipe.
             </p>
 
-            <p>
-              We'll run through how to set up the HTML document together first.
-            </p>
+						<p>
+							Don't forget the base HTML document setup!
+						</p>
           </div>
 				</section>
 
@@ -397,7 +483,10 @@
 
             <ul>
               <li>
-                <p>The World Wide Web is a network of connected computers</p>
+                <p>
+									The World Wide Web is an information space, where hypertext documents
+									are displayed and linked to other hypertext documents
+								</p>
               </li>
               <li>
                 <p>HTML is a markup language that adds structure to content</p>
@@ -406,7 +495,10 @@
                 <p>HTML5 is the latest stable version of HTML</p>
               </li>
               <li>
-                <p>HTML 'tags' are used to differentiate content, also helping provide semantics to a page</p>
+                <p>
+									HTML 'tags' are used to differentiate content, also helping
+									provide meaning to a page's content
+								</p>
               </li>
             </ul>
           </div>
