@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
 		<title>FEWD | Lesson 2</title>
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
@@ -39,6 +39,51 @@
 				  </div>
 
           <div class="content">
+            <h2>What does CSS do?</h2>
+
+            <ul>
+              <li class="fragment">Styles the page</li>
+              <li class="fragment">Can provide animations</li>
+              <li class="fragment">Makes things look good!</li>
+            </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>What does CSS stand for?</h2>
+            <p class="fragment">
+              Cascading Style Sheets.
+            </p>
+						<p class="fragment">
+              This means that styles are
+              applied in a cascade, with styles declared lower down in the file
+              taking precedence over earlier styles (all else being equal).
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Syntax</h2>
+            <img src="../../dist/images/week-1/css-syntax.png" alt="CSS syntax example">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>CSS</h2>
+				  </div>
+
+          <div class="content">
 						<h2>Ways of writing CSS</h2>
 
             <p>
@@ -50,6 +95,19 @@
               <li>Using JavaScript to style content</li>
               <li>Linking to an external stylesheet</li>
             </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Code Along</h2>
+				  </div>
+
+          <div class="content">
+						<img src="../../dist/images/ga/ga-code-along-icon.png" alt="General Assembly lab icon">
+						<p>
+							Let's start up a blank project to try out the different methods.
+						</p>
           </div>
 				</section>
 
@@ -135,7 +193,7 @@
               There are two ways to link to a file. One is by using a 'relative'
               path and the other is using an 'absolute' path.
             </p>
-            <p>
+            <p class="fragment">
               Anybody know the difference?
             </p>
           </div>
@@ -159,21 +217,23 @@
               There is a specific syntax to use when writing relative paths:
             </p>
             <ul>
-              <li>'.' denotes the current working directory</li>
-              <li>'..' means to jump back one level to the parent directory</li>
-              <li>'/' is used to show where a file/directory name begins and ends</li>
+              <li class="fragment">'.' denotes the current working directory</li>
+              <li class="fragment">'..' means to jump back one level to the parent directory</li>
+              <li class="fragment">'/' is used to show where a file/directory name begins and ends</li>
             </ul>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>CSS</h2>
+            <h2>Code Along</h2>
 				  </div>
 
           <div class="content">
-						<h2>Super chilled dogs</h2>
-            <img src="../../dist/images/week-1/dog.jpg" alt="Image of dog in a swing">
+						<img src="../../dist/images/ga/ga-code-along-icon.png" alt="General Assembly lab icon">
+            <p>
+            	Let's start practicing file paths with our Super Chilled Dog website.
+            </p>
           </div>
 				</section>
 
@@ -254,7 +314,7 @@
             <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
             <p>
               Task: have a 10 minute play around with file paths with the Super
-              Chilled Dogs project.
+              Chilled Dog project.
             </p>
           </div>
 				</section>
@@ -308,18 +368,18 @@
               Here are some good guidelines to start implementing:
             </p>
             <ul>
-              <li>
+              <li class="fragment">
                 <p>
 									Never use spaces when naming a file.
 								</p>
               </li>
-              <li>
+              <li class="fragment">
                 <p>
 									Use either '-' or '_' to separate words. It doesn't matter which,
 	                but be consistent.
 								</p>
               </li>
-              <li>
+              <li class="fragment">
                 <p>
 									Use only lowercased letters.
 								</p>
@@ -328,29 +388,13 @@
           </div>
 				</section>
 
-				<section>
+				<section class="u-bg--black">
 				  <div class="slide-header">
             <h2>CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2>What does CSS stand for?</h2>
-            <p class="fragment">
-              CSS stands for Cascading Style Sheets. This means that styles are
-              applied in a cascade, with styles declared lower down in the file
-              taking precedence over earlier styles (all else being equal).
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Syntax</h2>
-            <img src="../../dist/images/week-1/css-syntax.png" alt="CSS syntax example">
+            <h1>CSS Selectors</h1>
           </div>
 				</section>
 
@@ -363,32 +407,32 @@
 						<h2>Selectors</h2>
 
             <ul class="selector-list">
-              <li>
+              <li class="fragment">
 								<p>
 									The element <img src="../../dist/images/week-1/css-element.png" class="inline-img" alt="CSS element selector example">
 								</p>
 							</li>
-              <li>
+              <li class="fragment">
 								<p>
 									An ID <img src="../../dist/images/week-1/css-id.png" class="inline-img" alt="CSS ID selector example">
 								</p>
 							</li>
-              <li>
+              <li class="fragment">
 								<p>
 									A class <img src="../../dist/images/week-1/css-class.png" class="inline-img" alt="CSS class selector example">
 								</p>
 							</li>
-              <li>
+              <li class="fragment">
 								<p>
 									An attribute <img src="../../dist/images/week-1/css-attribute.png" class="inline-img" alt="CSS attribute selector example">
 								</p>
 							</li>
-              <li>
+              <li class="fragment">
 								<p>
 									A stateful pseudo-class <img src="../../dist/images/week-1/css-pseudo-1.png" class="inline-img" alt="CSS pseudo-selector example">
 								</p>
 							</li>
-              <li>
+              <li class="fragment">
 								<p>
 									A positional/number based pseudo-class <img src="../../dist/images/week-1/css-pseudo-2.png" class="inline-img" alt="CSS pseudo-selector example">
 								</p>
@@ -423,24 +467,6 @@
 
             <img src="../../dist/images/week-1/dom-tree.gif" alt="Example of the DOM">
             <p class="credit">Credit: <a href="http://www.webstepbook.com/supplements/slides/lecture16-dom_tree.shtml" target="_blank">Web Step Book</a></p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Chrome Dev Tools</h2>
-
-            <p>
-              These will become your go-to tool box as a frontend developer.
-              Simply right-click on any element on a webpage and select 'Inspect'.
-            </p>
-            <p>
-              Let's have a look online!
-            </p>
           </div>
 				</section>
 
@@ -555,19 +581,13 @@
           </div>
 				</section>
 
-				<section>
+				<section class="u-bg--black">
 				  <div class="slide-header">
             <h2>CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2>CSS lengths</h2>
-
-            <p>
-              There are many different units that can be used to declare CSS
-              properties such as <code>height</code>, <code>width</code>,
-              <code>margin</code>, <code>padding</code>, plus many more.
-            </p>
+            <h1>CSS Colours</h1>
           </div>
 				</section>
 
@@ -577,124 +597,7 @@
 				  </div>
 
           <div class="content">
-						<h2>CSS lengths (cont.)</h2>
-
-            <p>
-              The different types of CSS length units include:
-            </p>
-            <ul>
-              <li>Absolute units</li>
-              <li>Relative units</li>
-              <li>Viewport percentage lengths</li>
-              <li>Percentage</li>
-            </ul>
-            <p>
-              I will only be touching on the main units. If you would like to
-              read up on them all, then <a href="https://css-tricks.com/the-lengths-of-css/" target="_blank">here</a>
-              is a great article written by Chris Coyier.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Absolute units</h2>
-
-            <p>
-              By far the most commonly used absolute unit is the pixel (px).
-            </p>
-            <p>
-              Once an element has an explicit pixel <code>width</code> or
-              <code>height</code> assigned to it, it will never change size
-              based on unit changes elsewhere in the code or based on screen
-              size.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Relative units</h2>
-
-            <p>
-              The two most common relative units are <code>em</code> and
-              <code>rem</code> units.
-            </p>
-            <p>
-              <code>em</code> units are calculated as a multiple of the closest
-              ancestor with an explicit <code>font-size</code> declaration.
-            </p>
-            <p>
-              <code>rem</code> units are expressed as a multiple of the root
-              element (the <code>&lt;html&gt;</code> element).
-            </p>
-            <p>
-              Let's go back to our inheritance <a href="http://codepen.io/stooderrr/pen/jrOzpJ" target="_blank">Codepen</a>
-              to work through it.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Viewport percentage lengths</h2>
-
-            <p>
-              <code>vh</code> and <code>vw</code> can be used to set an element's
-              size relative to a percentage of the viewport. Both are used
-              by writing a value of between 0-100 before expressing the unit
-              e.g. <code>70vh</code>.
-            </p>
-            <p>
-              <code>vh</code> is a percentage value of the height of the viewport.
-            </p>
-            <p>
-              <code>vw</code> is a percentage value of the width of the viewport.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Percentage</h2>
-
-            <p>
-              Element dimensions can also be declared as a <code>%</code>.
-            </p>
-            <p>
-              An element's percentage will define its dimensions in relation
-              to its parent element.
-            </p>
-            <p>
-              For example, if the parent container has a width of 500px and the
-              child's width is set to 50%, the width of the child will be 250px.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>CSS colors (yep that's how to spell it in CSS!)</h2>
+						<h2>CSS colors (actually how to spell it in CSS!)</h2>
 
             <p>
               When declaring colours in CSS, there are 6 different options
@@ -743,10 +646,6 @@
               final two blue.
             </p>
             <img src="../../dist/images/week-1/colors-hex.png" alt="Hex code colour diagram">
-            <p>
-              This is the only colour unit where you can be really sad (like me)
-              and create words out of colour codes...<code>#BADA55</code>!
-            </p>
           </div>
 				</section>
 
@@ -763,7 +662,7 @@
               for red, second for green and third for blue e.g. <code>rgb(0,100,0)</code> would
               be a dark-ish green.
             </p>
-            <p>
+            <p class="fragment">
               RGBa is the same as RGB, only a fourth value is added ranging from 0-1.
               This unit represents transparency with 0 being fully transparent and
               1 being solid e.g. <code>rgba(0,100,0, 0.5)</code> would be the same colour as before,
@@ -812,15 +711,17 @@
 				  </div>
 
           <div class="content">
-						<h2>Assignment</h2>
+						<img src="../../dist/images/ga/ga-homework-icon.png" alt="General Assembly homework icon">
 
             <p>
-              Carry on with your portfolio website. Add an external stylesheet
-              and start adding styles. Look into how <code>margin</code> and
-              <code>padding</code> can be used to space elements.
+              Build your two page portfolio website.
             </p>
-            <p>
-              Read up on <a href="https://guides.github.com/introduction/getting-your-project-on-github/" target="_blank">Github</a>
+						<p>
+							Note: You will need to experiment with <code>margin</code>, <code>padding</code>
+							and <code>border</code> CSS properties for this assignment.
+						</p>
+						<p>
+              Bonus: Read up on <a href="https://guides.github.com/introduction/getting-your-project-on-github/" target="_blank">Github</a>
               for next lesson, as we will be pushing our assignment code up
               to our own repositories.
             </p>
