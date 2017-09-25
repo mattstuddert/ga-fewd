@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
 		<title>FEWD | Lesson 4</title>
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
@@ -22,6 +22,141 @@
 						<span class="instructor">Matt Studdert</span>
           </div>
 				</section>
+
+				<!-- TODO: add this into lesson -->
+
+				<!-- <section>
+				  <div class="slide-header">
+            <h2>CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>CSS lengths</h2>
+
+            <p>
+              There are many different units that can be used to declare CSS
+              properties such as <code>height</code>, <code>width</code>,
+              <code>margin</code>, <code>padding</code>, plus many more.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>CSS lengths (cont.)</h2>
+
+            <p>
+              The different types of CSS length units include:
+            </p>
+            <ul>
+              <li>Absolute units</li>
+              <li>Relative units</li>
+              <li>Viewport percentage lengths</li>
+              <li>Percentage</li>
+            </ul>
+            <p>
+              I will only be touching on the main units. If you would like to
+              read up on them all, then <a href="https://css-tricks.com/the-lengths-of-css/" target="_blank">here</a>
+              is a great article written by Chris Coyier.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Absolute units</h2>
+
+            <p>
+              By far the most commonly used absolute unit is the pixel (px).
+            </p>
+            <p>
+              Once an element has an explicit pixel <code>width</code> or
+              <code>height</code> assigned to it, it will never change size
+              based on unit changes elsewhere in the code or based on screen
+              size.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Relative units</h2>
+
+            <p>
+              The two most common relative units are <code>em</code> and
+              <code>rem</code> units.
+            </p>
+            <p>
+              <code>em</code> units are calculated as a multiple of the closest
+              ancestor with an explicit <code>font-size</code> declaration.
+            </p>
+            <p>
+              <code>rem</code> units are expressed as a multiple of the root
+              element (the <code>&lt;html&gt;</code> element).
+            </p>
+            <p>
+              Let's go back to our inheritance <a href="http://codepen.io/stooderrr/pen/jrOzpJ" target="_blank">Codepen</a>
+              to work through it.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Viewport percentage lengths</h2>
+
+            <p>
+              <code>vh</code> and <code>vw</code> can be used to set an element's
+              size relative to a percentage of the viewport. Both are used
+              by writing a value of between 0-100 before expressing the unit
+              e.g. <code>70vh</code>.
+            </p>
+            <p>
+              <code>vh</code> is a percentage value of the height of the viewport.
+            </p>
+            <p>
+              <code>vw</code> is a percentage value of the width of the viewport.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Percentage</h2>
+
+            <p>
+              Element dimensions can also be declared as a <code>%</code>.
+            </p>
+            <p>
+              An element's percentage will define its dimensions in relation
+              to its parent element.
+            </p>
+            <p>
+              For example, if the parent container has a width of 500px and the
+              child's width is set to 50%, the width of the child will be 250px.
+            </p>
+          </div>
+				</section> -->
 
 				<section>
 				  <div class="slide-header">
@@ -110,6 +245,67 @@
             </p>
           </div>
 				</section>
+
+				<!-- TODO: find space to add in about pseudo elements -->
+<!--
+				<section>
+				  <div class="slide-header">
+            <h2>Pseudo Elements</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Pseudo elements</h2>
+
+            <p>
+              In the box model CSS snippet we came across a new type of element: the
+              pseudo element.
+            </p>
+            <p>
+              Every non-replaced element (see <a href="http://reference.sitepoint.com/css/replacedelements" target="_blank">this</a>
+              article for definition) comes with two 'free' elements that can
+              be styled independently of the main element.
+            </p>
+            <p>
+              These elements are the <code>:before</code> and <code>:after</code>
+              elements.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Pseudo Elements</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>:before</code> and <code>:after</code></h2>
+
+            <p>
+              These two pseudo-elements are your best friends when it comes to
+              adding extra design detail to your elements.
+            </p>
+            <p>
+              Other pseudo-elements include <code>:first-letter</code> and
+              <code>:first-line</code>, which can come in handy every now and then.
+            </p>
+            <p>
+              But <code>:before</code> and <code>:after</code> are by far the most commonly used.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Pseudo Elements</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Codepen example</h2>
+            <p>
+              Click <a href="http://codepen.io/stooderrr/pen/egVwmY" target="_blank">here</a>
+            </p>
+          </div>
+				</section> -->
 
 				<section>
 				  <div class="slide-header">
