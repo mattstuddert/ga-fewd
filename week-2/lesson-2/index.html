@@ -23,141 +23,6 @@
           </div>
 				</section>
 
-				<!-- TODO: add this into lesson -->
-
-				<!-- <section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>CSS lengths</h2>
-
-            <p>
-              There are many different units that can be used to declare CSS
-              properties such as <code>height</code>, <code>width</code>,
-              <code>margin</code>, <code>padding</code>, plus many more.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>CSS lengths (cont.)</h2>
-
-            <p>
-              The different types of CSS length units include:
-            </p>
-            <ul>
-              <li>Absolute units</li>
-              <li>Relative units</li>
-              <li>Viewport percentage lengths</li>
-              <li>Percentage</li>
-            </ul>
-            <p>
-              I will only be touching on the main units. If you would like to
-              read up on them all, then <a href="https://css-tricks.com/the-lengths-of-css/" target="_blank">here</a>
-              is a great article written by Chris Coyier.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Absolute units</h2>
-
-            <p>
-              By far the most commonly used absolute unit is the pixel (px).
-            </p>
-            <p>
-              Once an element has an explicit pixel <code>width</code> or
-              <code>height</code> assigned to it, it will never change size
-              based on unit changes elsewhere in the code or based on screen
-              size.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Relative units</h2>
-
-            <p>
-              The two most common relative units are <code>em</code> and
-              <code>rem</code> units.
-            </p>
-            <p>
-              <code>em</code> units are calculated as a multiple of the closest
-              ancestor with an explicit <code>font-size</code> declaration.
-            </p>
-            <p>
-              <code>rem</code> units are expressed as a multiple of the root
-              element (the <code>&lt;html&gt;</code> element).
-            </p>
-            <p>
-              Let's go back to our inheritance <a href="http://codepen.io/stooderrr/pen/jrOzpJ" target="_blank">Codepen</a>
-              to work through it.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Viewport percentage lengths</h2>
-
-            <p>
-              <code>vh</code> and <code>vw</code> can be used to set an element's
-              size relative to a percentage of the viewport. Both are used
-              by writing a value of between 0-100 before expressing the unit
-              e.g. <code>70vh</code>.
-            </p>
-            <p>
-              <code>vh</code> is a percentage value of the height of the viewport.
-            </p>
-            <p>
-              <code>vw</code> is a percentage value of the width of the viewport.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Percentage</h2>
-
-            <p>
-              Element dimensions can also be declared as a <code>%</code>.
-            </p>
-            <p>
-              An element's percentage will define its dimensions in relation
-              to its parent element.
-            </p>
-            <p>
-              For example, if the parent container has a width of 500px and the
-              child's width is set to 50%, the width of the child will be 250px.
-            </p>
-          </div>
-				</section> -->
-
 				<section>
 				  <div class="slide-header">
             <h2>Review</h2>
@@ -220,10 +85,20 @@
 
           <div class="content">
 						<h2>Normalize.css vs reset.css</h2>
-            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+            <img src="../../dist/images/ga/ga-code-along-icon.png" alt="General Assembly lab icon">
             <p>
               Let's open up an example project to take a peek.
             </p>
+          </div>
+				</section>
+
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+            <h1>Display</h1>
           </div>
 				</section>
 
@@ -245,67 +120,6 @@
             </p>
           </div>
 				</section>
-
-				<!-- TODO: find space to add in about pseudo elements -->
-<!--
-				<section>
-				  <div class="slide-header">
-            <h2>Pseudo Elements</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Pseudo elements</h2>
-
-            <p>
-              In the box model CSS snippet we came across a new type of element: the
-              pseudo element.
-            </p>
-            <p>
-              Every non-replaced element (see <a href="http://reference.sitepoint.com/css/replacedelements" target="_blank">this</a>
-              article for definition) comes with two 'free' elements that can
-              be styled independently of the main element.
-            </p>
-            <p>
-              These elements are the <code>:before</code> and <code>:after</code>
-              elements.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Pseudo Elements</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>:before</code> and <code>:after</code></h2>
-
-            <p>
-              These two pseudo-elements are your best friends when it comes to
-              adding extra design detail to your elements.
-            </p>
-            <p>
-              Other pseudo-elements include <code>:first-letter</code> and
-              <code>:first-line</code>, which can come in handy every now and then.
-            </p>
-            <p>
-              But <code>:before</code> and <code>:after</code> are by far the most commonly used.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Pseudo Elements</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Codepen example</h2>
-            <p>
-              Click <a href="http://codepen.io/stooderrr/pen/egVwmY" target="_blank">here</a>
-            </p>
-          </div>
-				</section> -->
 
 				<section>
 				  <div class="slide-header">
@@ -330,9 +144,6 @@
               <li class="fragment">
                 <code>margin</code> and <code>padding</code> push elements away
                 both horizontally AND vertically.
-              </li>
-              <li class="fragment">
-                Ignores the <code>vertical-align</code> rule.
               </li>
             </ul>
           </div>
@@ -378,9 +189,6 @@
               <li class="fragment">
                 <code>margin</code> and <code>padding</code> only push elements
                 away horizontally.
-              </li>
-              <li class="fragment">
-                Are subject to <code>vertical-align</code>.
               </li>
               <li class="fragment">
                 Do not respond to set  <code>height</code> or <code>width</code>.
@@ -448,12 +256,23 @@
                 both horizontally AND vertically.
               </li>
               <li class="fragment">
-                Are subject to <code>vertical-align</code>.
-              </li>
-              <li class="fragment">
                 Responds to set  <code>height</code> and <code>width</code>.
               </li>
             </ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Practice using display</h2>
+            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+            <p>
+              Take 10 minutes to practice changing the display value on various elements.
+            </p>
           </div>
 				</section>
 
@@ -530,200 +349,13 @@
           </div>
 				</section>
 
-				<section>
+				<section class="u-bg--black">
 				  <div class="slide-header">
             <h2>Layout</h2>
 				  </div>
 
           <div class="content">
-						<h2>Positioning</h2>
-
-            <p>
-              Having a good understanding of CSS positioning is crucial for effective
-              layout of a page. However, it is an often misunderstood property, that
-              can quickly cause issues if used incorrectly.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Layout</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Position properties</h2>
-
-            <p>
-              The position property can have one of 5 possible values:
-            </p>
-            <ul>
-              <li>Static (default)</li>
-              <li>Relative</li>
-              <li>Absolute</li>
-              <li>Fixed</li>
-              <li>Sticky (little support)</li>
-            </ul>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Layout</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>position: static;</code></h2>
-
-            <p>
-              This position declaration is the default value on all elements, if no
-              other position value has been set. It contains the following characteristics:
-            </p>
-            <ul>
-              <li>
-                Element maintains normal behaviour, sitting in the flow of the document.
-              </li>
-              <li>
-                Does not respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
-                <code>left</code> or <code>z-index</code> properties.
-              </li>
-            </ul>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Layout</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>position: relative;</code></h2>
-
-            <ul>
-              <li>
-                If no other properties are set, the element will maintain all normal
-                behviour.
-              </li>
-              <li>
-                Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
-                <code>left</code> and <code>z-index</code> properties.
-              </li>
-              <li>
-                If one of these other properties are set, the element will change position
-                on screen, but the original position of the element will remain, as if
-                the element was still there.
-              </li>
-            </ul>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Layout</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>position: absolute;</code></h2>
-
-            <ul>
-              <li>
-                Pulls the element out of the normal flow of the document. Meaning
-                other elements will fill the space left by the absolutely positioned
-                element.
-              </li>
-              <li>
-                Block-level elements no longer stretch to fill the width of the container.
-              </li>
-              <li>
-                Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
-                <code>left</code> and <code>z-index</code> properties.
-              </li>
-              <li>
-                Is positioned relatively to its closest ancestor with a position property
-                other than <code>position: static;</code>.
-              </li>
-            </ul>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Layout</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>position: fixed;</code></h2>
-
-            <ul>
-              <li>
-                Pulls the element out of the normal flow of the document. Meaning
-                other elements will fill the space left by the fixed position
-                element.
-              </li>
-              <li>
-                Block-level elements no longer stretch to fill the width of the container.
-              </li>
-              <li>
-                Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
-                <code>left</code> and <code>z-index</code> properties.
-              </li>
-              <li>
-                Is positioned relatively to the screen's viewport. Will maintain this position on the
-                viewport until another <code>position</code> property is set.
-              </li>
-            </ul>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Layout</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Codepen example</h2>
-            <p>
-              Click <a href="http://codepen.io/stooderrr/pen/ZOWRgO" target="_blank">here</a>
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Layout</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>z-index</code></h2>
-
-            <p>
-              The <code>z-index</code> property specifies the z-order of an element
-              and its descendants.
-            </p>
-            <p>
-              This relates to how elements are 'stacked' in the viewport and therefore
-              which elements should appear closer to the user and sit on top of other elements.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Layout</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>z-index</code> (cont.)</h2>
-
-            <p>
-              Remember, a <code>position</code> value other than <code>static</code> has
-              to be set in order for <code>z-index</code> to work.
-            </p>
-            <p>
-              The <code>z-index</code> value can literally be any number you like. So, as
-              you can imagine, it can get messy very quickly. Always be sure to define a
-              <code>z-index</code> scale for a project to manage this.
-            </p>
+            <h1>Floats</h1>
           </div>
 				</section>
 
@@ -735,13 +367,39 @@
           <div class="content">
 						<h2>Floats</h2>
 
+						<p>
+							The CSS <code>float</code> property is often used for defining layouts.
+							Key features of floating an element include:
+						</p>
+
+						<ul>
+							<li class="fragment">
+								Takes elements out of the normal flow of the document, meaning other
+								content and elements can flow around a floated element
+							</li>
+							<li class="fragment">
+								The main values are none (default), left and right
+							</li>
+							<li class="fragment">
+								When floated left or right, an element will be pushed to the given side
+	              of its container, where inline elements or content can flow around it.
+							</li>
+						</ul>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Clearfix</h2>
+
             <p>
-              The CSS <code>float</code> property takes elements out of the normal flow
-              of the document. The main values are none (default), left and right.
-            </p>
-            <p>
-              When floated left or right, an element will be placed to the given side
-              of its container, where inline elements or content can flow around it.
+            	Floating elements does not come without it's issues though unfortunately.
+							When you float an element, it's parent's height becomes 0 by default, which
+							can have unwanted side effects.
             </p>
           </div>
 				</section>
@@ -770,10 +428,11 @@
             <img src="../../dist/images/week-2/css-clearfix.png" alt="Clearfix code snippet">
             <p>
               The <code>clearfix</code> class is always assigned to the PARENT element
-              of floated elements. The styling creates a new block formatting context, which
-              effectively maps out an element's contents. This forces the parent's height
-              to register its floated children's heights again.
+              of floated elements.
             </p>
+						<p>
+							This forces the parent's height to register its floated children's heights again.
+						</p>
           </div>
 				</section>
 
@@ -840,16 +499,16 @@
               The main values for <code>clear</code> are none, left, right and both:
             </p>
             <ul>
-              <li>
+              <li class="fragment">
                 <strong>none:</strong> the element does not clear past floated elements.
               </li>
-              <li>
+              <li class="fragment">
                 <strong>left:</strong> the element clears the left floated elements.
               </li>
-              <li>
+              <li class="fragment">
                 <strong>right:</strong> the element clears the right floated elements.
               </li>
-              <li>
+              <li class="fragment">
                 <strong>both:</strong> the element clears both right and left floated
                 elements.
               </li>
@@ -864,11 +523,11 @@
 
           <div class="content">
 						<h2>CSS <code>clear</code> vs <code>.clearfix</code></h2>
-            <p>
+            <p class="fragment">
               <code>clear</code> is a CSS property that is placed on an element to drop
               it below floated elements.
             </p>
-            <p>
+            <p class="fragment">
               <code>clearfix</code> is a class that is placed on a parent element (in the HTML)
               when its height has collapsed due to its children being floated.
             </p>
@@ -900,7 +559,7 @@
             <p>
               Luckily there are grid frameworks to do all of the hard work for us...
             </p>
-            <p>
+            <p class="fragment">
               ...but that's for a later date!
             </p>
           </div>
@@ -908,16 +567,15 @@
 
 				<section>
 				  <div class="slide-header">
-            <h2>Layout</h2>
+            <h2>Assignment</h2>
 				  </div>
 
           <div class="content">
-						<h2>Grid frameworks</h2>
+						<h2>Relaxr Landing Page</h2>
+            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
             <p>
-              Luckily there are grid frameworks to do all of the hard work for us...
-            </p>
-            <p>
-              ...but that's for a later date!
+            	Make a start on this week's assignment. We'll go through the project
+							setup together.
             </p>
           </div>
 				</section>

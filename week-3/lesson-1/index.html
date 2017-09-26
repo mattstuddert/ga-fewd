@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
 		<title>FEWD | Lesson 5</title>
 
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
@@ -22,6 +22,268 @@
 						<span class="instructor">Matt Studdert</span>
           </div>
 				</section>
+
+				<!-- TODO: find space to add in about pseudo elements -->
+<!--
+				<section>
+				  <div class="slide-header">
+            <h2>Pseudo Elements</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Pseudo elements</h2>
+
+            <p>
+              In the box model CSS snippet we came across a new type of element: the
+              pseudo element.
+            </p>
+            <p>
+              Every non-replaced element (see <a href="http://reference.sitepoint.com/css/replacedelements" target="_blank">this</a>
+              article for definition) comes with two 'free' elements that can
+              be styled independently of the main element.
+            </p>
+            <p>
+              These elements are the <code>:before</code> and <code>:after</code>
+              elements.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Pseudo Elements</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>:before</code> and <code>:after</code></h2>
+
+            <p>
+              These two pseudo-elements are your best friends when it comes to
+              adding extra design detail to your elements.
+            </p>
+            <p>
+              Other pseudo-elements include <code>:first-letter</code> and
+              <code>:first-line</code>, which can come in handy every now and then.
+            </p>
+            <p>
+              But <code>:before</code> and <code>:after</code> are by far the most commonly used.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Pseudo Elements</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Codepen example</h2>
+            <p>
+              Click <a href="http://codepen.io/stooderrr/pen/egVwmY" target="_blank">here</a>
+            </p>
+          </div>
+				</section> -->
+
+				<!-- TODO: add positioning into lab -->
+
+				<!--
+				<section>
+					<div class="slide-header">
+						<h2>Layout</h2>
+					</div>
+
+					<div class="content">
+						<h2>Positioning</h2>
+
+						<p>
+							Having a good understanding of CSS positioning is crucial for effective
+							layout of a page. However, it is an often misunderstood property, that
+							can quickly cause issues if used incorrectly.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Layout</h2>
+					</div>
+
+					<div class="content">
+						<h2>Position properties</h2>
+
+						<p>
+							The position property can have one of 5 possible values:
+						</p>
+						<ul>
+							<li>Static (default)</li>
+							<li>Relative</li>
+							<li>Absolute</li>
+							<li>Fixed</li>
+							<li>Sticky (little support)</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Layout</h2>
+					</div>
+
+					<div class="content">
+						<h2><code>position: static;</code></h2>
+
+						<p>
+							This position declaration is the default value on all elements, if no
+							other position value has been set. It contains the following characteristics:
+						</p>
+						<ul>
+							<li>
+								Element maintains normal behaviour, sitting in the flow of the document.
+							</li>
+							<li>
+								Does not respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+								<code>left</code> or <code>z-index</code> properties.
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Layout</h2>
+					</div>
+
+					<div class="content">
+						<h2><code>position: relative;</code></h2>
+
+						<ul>
+							<li>
+								If no other properties are set, the element will maintain all normal
+								behviour.
+							</li>
+							<li>
+								Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+								<code>left</code> and <code>z-index</code> properties.
+							</li>
+							<li>
+								If one of these other properties are set, the element will change position
+								on screen, but the original position of the element will remain, as if
+								the element was still there.
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Layout</h2>
+					</div>
+
+					<div class="content">
+						<h2><code>position: absolute;</code></h2>
+
+						<ul>
+							<li>
+								Pulls the element out of the normal flow of the document. Meaning
+								other elements will fill the space left by the absolutely positioned
+								element.
+							</li>
+							<li>
+								Block-level elements no longer stretch to fill the width of the container.
+							</li>
+							<li>
+								Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+								<code>left</code> and <code>z-index</code> properties.
+							</li>
+							<li>
+								Is positioned relatively to its closest ancestor with a position property
+								other than <code>position: static;</code>.
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Layout</h2>
+					</div>
+
+					<div class="content">
+						<h2><code>position: fixed;</code></h2>
+
+						<ul>
+							<li>
+								Pulls the element out of the normal flow of the document. Meaning
+								other elements will fill the space left by the fixed position
+								element.
+							</li>
+							<li>
+								Block-level elements no longer stretch to fill the width of the container.
+							</li>
+							<li>
+								Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+								<code>left</code> and <code>z-index</code> properties.
+							</li>
+							<li>
+								Is positioned relatively to the screen's viewport. Will maintain this position on the
+								viewport until another <code>position</code> property is set.
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Layout</h2>
+					</div>
+
+					<div class="content">
+						<h2>Codepen example</h2>
+						<p>
+							Click <a href="http://codepen.io/stooderrr/pen/ZOWRgO" target="_blank">here</a>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Layout</h2>
+					</div>
+
+					<div class="content">
+						<h2><code>z-index</code></h2>
+
+						<p>
+							The <code>z-index</code> property specifies the z-order of an element
+							and its descendants.
+						</p>
+						<p>
+							This relates to how elements are 'stacked' in the viewport and therefore
+							which elements should appear closer to the user and sit on top of other elements.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Layout</h2>
+					</div>
+
+					<div class="content">
+						<h2><code>z-index</code> (cont.)</h2>
+
+						<p>
+							Remember, a <code>position</code> value other than <code>static</code> has
+							to be set in order for <code>z-index</code> to work.
+						</p>
+						<p>
+							The <code>z-index</code> value can literally be any number you like. So, as
+							you can imagine, it can get messy very quickly. Always be sure to define a
+							<code>z-index</code> scale for a project to manage this.
+						</p>
+					</div>
+				</section>
+				-->
 
 				<section>
 				  <div class="slide-header">
