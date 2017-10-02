@@ -18,13 +18,242 @@
 				  </div>
 
           <div class="content">
-            <h1>Layout Lab</h1>
+            <h1>Positioning</h1>
 						<span class="instructor">Matt Studdert</span>
           </div>
 				</section>
 
-				<!-- TODO: find space to add in about pseudo elements -->
-<!--
+				<section>
+				  <div class="slide-header">
+            <h2>Review</h2>
+				  </div>
+
+          <div class="content">
+            <h2 class="h1">What did you learn last lesson?</h2>
+          </div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Positioning</h2>
+					</div>
+
+					<div class="content">
+						<h2>Positioning</h2>
+
+						<p>
+							Having a good understanding of CSS positioning is crucial for effective
+							layout of a page. However, it is an often misunderstood property, that
+							can quickly cause issues if used incorrectly.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Positioning</h2>
+					</div>
+
+					<div class="content">
+						<h2>Position properties</h2>
+
+						<p>
+							The position property can have one of 5 possible values:
+						</p>
+						<ul>
+							<li>Static (default)</li>
+							<li>Relative</li>
+							<li>Absolute</li>
+							<li>Fixed</li>
+							<li>Sticky (little support)</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Positioning</h2>
+					</div>
+
+					<div class="content">
+						<h2><code>position: static;</code></h2>
+
+						<p>
+							This position declaration is the default value on all elements, if no
+							other position value has been set. It contains the following characteristics:
+						</p>
+						<ul>
+							<li class="fragment">
+								Element maintains normal behaviour, sitting in the flow of the document.
+							</li>
+							<li class="fragment">
+								Does not respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+								<code>left</code> or <code>z-index</code> properties.
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Positioning</h2>
+					</div>
+
+					<div class="content">
+						<h2><code>position: relative;</code></h2>
+
+						<ul>
+							<li class="fragment">
+								If no other properties are set, the element will maintain all normal
+								behviour.
+							</li>
+							<li class="fragment">
+								Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+								<code>left</code> and <code>z-index</code> properties.
+							</li>
+							<li class="fragment">
+								If one of these other properties are set, the element will change position
+								on screen, but the original position of the element will remain, as if
+								the element was still there.
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Positioning</h2>
+					</div>
+
+					<div class="content">
+						<h2><code>position: absolute;</code></h2>
+
+						<ul>
+							<li class="fragment">
+								Pulls the element out of the normal flow of the document. Meaning
+								other elements will fill the space left by the absolutely positioned
+								element.
+							</li>
+							<li class="fragment">
+								Block-level elements no longer stretch to fill the width of the container.
+							</li>
+							<li class="fragment">
+								Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+								<code>left</code> and <code>z-index</code> properties.
+							</li>
+							<li class="fragment">
+								Is positioned relatively to its closest ancestor with a position property
+								other than <code>position: static;</code>.
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Positioning</h2>
+					</div>
+
+					<div class="content">
+						<h2><code>position: fixed;</code></h2>
+
+						<ul>
+							<li class="fragment">
+								Pulls the element out of the normal flow of the document. Meaning
+								other elements will fill the space left by the fixed position
+								element.
+							</li>
+							<li class="fragment">
+								Block-level elements no longer stretch to fill the width of the container.
+							</li>
+							<li class="fragment">
+								Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+								<code>left</code> and <code>z-index</code> properties.
+							</li>
+							<li class="fragment">
+								Is positioned relatively to the screen's viewport.
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Positioning</h2>
+					</div>
+
+					<div class="content">
+						<h2>Codepen example</h2>
+						<p>
+							Click <a href="http://codepen.io/stooderrr/pen/ZOWRgO" target="_blank">here</a>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Positioning</h2>
+					</div>
+
+					<div class="content">
+						<h2><code>z-index</code></h2>
+
+						<p>
+							The <code>z-index</code> property specifies the z-order of an element
+							and its descendants.
+						</p>
+						<p>
+							This relates to how elements are 'stacked' in the viewport and therefore
+							which elements should appear closer to the user and sit on top of other elements.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Positioning</h2>
+					</div>
+
+					<div class="content">
+						<h2><code>z-index</code> (cont.)</h2>
+
+						<p>
+							Remember, a <code>position</code> value other than <code>static</code> has
+							to be set in order for <code>z-index</code> to work.
+						</p>
+						<p>
+							The <code>z-index</code> value can literally be any number you like. So, as
+							you can imagine, it can get messy very quickly. Always be sure to define a
+							<code>z-index</code> scale for a project to manage this.
+						</p>
+					</div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Layout</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Practice using position and z-index</h2>
+            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+            <p>
+              Take 10 minutes to practice changing the position and z-index values
+							of the different elements on the Codepen example.
+            </p>
+          </div>
+				</section>
+
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <h2>Positioning</h2>
+				  </div>
+
+          <div class="content">
+            <h2 class="h1">Pseudo Elements</h2>
+          </div>
+				</section>
+
 				<section>
 				  <div class="slide-header">
             <h2>Pseudo Elements</h2>
@@ -33,10 +262,6 @@
           <div class="content">
 						<h2>Pseudo elements</h2>
 
-            <p>
-              In the box model CSS snippet we came across a new type of element: the
-              pseudo element.
-            </p>
             <p>
               Every non-replaced element (see <a href="http://reference.sitepoint.com/css/replacedelements" target="_blank">this</a>
               article for definition) comes with two 'free' elements that can
@@ -82,216 +307,15 @@
               Click <a href="http://codepen.io/stooderrr/pen/egVwmY" target="_blank">here</a>
             </p>
           </div>
-				</section> -->
-
-				<!-- TODO: add positioning into lab -->
-
-				<!--
-				<section>
-					<div class="slide-header">
-						<h2>Layout</h2>
-					</div>
-
-					<div class="content">
-						<h2>Positioning</h2>
-
-						<p>
-							Having a good understanding of CSS positioning is crucial for effective
-							layout of a page. However, it is an often misunderstood property, that
-							can quickly cause issues if used incorrectly.
-						</p>
-					</div>
 				</section>
 
-				<section>
-					<div class="slide-header">
-						<h2>Layout</h2>
-					</div>
-
-					<div class="content">
-						<h2>Position properties</h2>
-
-						<p>
-							The position property can have one of 5 possible values:
-						</p>
-						<ul>
-							<li>Static (default)</li>
-							<li>Relative</li>
-							<li>Absolute</li>
-							<li>Fixed</li>
-							<li>Sticky (little support)</li>
-						</ul>
-					</div>
-				</section>
-
-				<section>
-					<div class="slide-header">
-						<h2>Layout</h2>
-					</div>
-
-					<div class="content">
-						<h2><code>position: static;</code></h2>
-
-						<p>
-							This position declaration is the default value on all elements, if no
-							other position value has been set. It contains the following characteristics:
-						</p>
-						<ul>
-							<li>
-								Element maintains normal behaviour, sitting in the flow of the document.
-							</li>
-							<li>
-								Does not respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
-								<code>left</code> or <code>z-index</code> properties.
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section>
-					<div class="slide-header">
-						<h2>Layout</h2>
-					</div>
-
-					<div class="content">
-						<h2><code>position: relative;</code></h2>
-
-						<ul>
-							<li>
-								If no other properties are set, the element will maintain all normal
-								behviour.
-							</li>
-							<li>
-								Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
-								<code>left</code> and <code>z-index</code> properties.
-							</li>
-							<li>
-								If one of these other properties are set, the element will change position
-								on screen, but the original position of the element will remain, as if
-								the element was still there.
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section>
-					<div class="slide-header">
-						<h2>Layout</h2>
-					</div>
-
-					<div class="content">
-						<h2><code>position: absolute;</code></h2>
-
-						<ul>
-							<li>
-								Pulls the element out of the normal flow of the document. Meaning
-								other elements will fill the space left by the absolutely positioned
-								element.
-							</li>
-							<li>
-								Block-level elements no longer stretch to fill the width of the container.
-							</li>
-							<li>
-								Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
-								<code>left</code> and <code>z-index</code> properties.
-							</li>
-							<li>
-								Is positioned relatively to its closest ancestor with a position property
-								other than <code>position: static;</code>.
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section>
-					<div class="slide-header">
-						<h2>Layout</h2>
-					</div>
-
-					<div class="content">
-						<h2><code>position: fixed;</code></h2>
-
-						<ul>
-							<li>
-								Pulls the element out of the normal flow of the document. Meaning
-								other elements will fill the space left by the fixed position
-								element.
-							</li>
-							<li>
-								Block-level elements no longer stretch to fill the width of the container.
-							</li>
-							<li>
-								Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
-								<code>left</code> and <code>z-index</code> properties.
-							</li>
-							<li>
-								Is positioned relatively to the screen's viewport. Will maintain this position on the
-								viewport until another <code>position</code> property is set.
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section>
-					<div class="slide-header">
-						<h2>Layout</h2>
-					</div>
-
-					<div class="content">
-						<h2>Codepen example</h2>
-						<p>
-							Click <a href="http://codepen.io/stooderrr/pen/ZOWRgO" target="_blank">here</a>
-						</p>
-					</div>
-				</section>
-
-				<section>
-					<div class="slide-header">
-						<h2>Layout</h2>
-					</div>
-
-					<div class="content">
-						<h2><code>z-index</code></h2>
-
-						<p>
-							The <code>z-index</code> property specifies the z-order of an element
-							and its descendants.
-						</p>
-						<p>
-							This relates to how elements are 'stacked' in the viewport and therefore
-							which elements should appear closer to the user and sit on top of other elements.
-						</p>
-					</div>
-				</section>
-
-				<section>
-					<div class="slide-header">
-						<h2>Layout</h2>
-					</div>
-
-					<div class="content">
-						<h2><code>z-index</code> (cont.)</h2>
-
-						<p>
-							Remember, a <code>position</code> value other than <code>static</code> has
-							to be set in order for <code>z-index</code> to work.
-						</p>
-						<p>
-							The <code>z-index</code> value can literally be any number you like. So, as
-							you can imagine, it can get messy very quickly. Always be sure to define a
-							<code>z-index</code> scale for a project to manage this.
-						</p>
-					</div>
-				</section>
-				-->
-
-				<section>
+				<section class="u-bg--black">
 				  <div class="slide-header">
-            <h2>Review</h2>
+            <h2>Fonts</h2>
 				  </div>
 
           <div class="content">
-            <h2 class="h1">What did you learn last lesson?</h2>
+            <h2 class="h1">Fonts</h2>
           </div>
 				</section>
 
@@ -317,20 +341,20 @@
           <div class="content">
 						<h2>Font properties</h2>
             <ul>
-              <li>
+              <li class="fragment">
                 <code>font-family:</code> specifies the type of font you would
                 like to use. Can have multiple values, separated by commas, to provide
                 fallbacks.
               </li>
-              <li>
+              <li class="fragment">
                 <code>font-size:</code> specifies the size of the font. Can be absolute or
                 relative values.
               </li>
-              <li>
+              <li class="fragment">
                 <code>font-weight:</code> specifies the boldness of a font. Can use
                 keywords or numerical values.
               </li>
-              <li>
+              <li class="fragment">
                 <code>line-height:</code> specifies the minimum height of the line
                 boxes within an element. Can take length and percentage values, as well
                 as unitless values e.g. <code>line-height: 1.7;</code>
@@ -347,18 +371,18 @@
           <div class="content">
 						<h2>Content properties</h2>
 						<ul>
-              <li>
+              <li class="fragment">
                 <code>text-align:</code> often placed on the parent container to
                 determine how its inline content is aligned.
               </li>
-              <li>
+              <li class="fragment">
                 <code>letter-spacing:</code> allows control of spacing between characters.
               </li>
-              <li>
+              <li class="fragment">
                 <code>text-transform:</code> specifies how to capitalise an element's text. Values
                 include <code>uppercase</code>, <code>lowercase</code> and <code>capitalize</code>.
               </li>
-              <li>
+              <li class="fragment">
                 <code>text-decoration:</code> alters the formatting of text, allowing values
                 such as <code>underline</code>, <code>overline</code> and <code>line-through</code>.
               </li>
@@ -424,7 +448,21 @@
             </p>
             <p>
               One of the most well-known font icon libraries is <a href="http://fontawesome.io/" target="_blank">Font Awesome</a>.
-              Let's take a look.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Fonts</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Font Icons</h2>
+            <img src="../../dist/images/ga/ga-code-along-icon.png" alt="General Assembly lab icon">
+            <p>
+              Let's take a look at how we can add font icons to a project using
+							<a href="http://fontawesome.io/" target="_blank">Font Awesome</a>.
             </p>
           </div>
 				</section>
