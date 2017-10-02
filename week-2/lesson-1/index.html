@@ -156,13 +156,17 @@
 				  </div>
 
           <div class="content">
-						<h2>Walkthrough</h2>
+						<h2>Creating your repo</h2>
 
-		        <p>
-              Firstly, be sure your project is named something meaningful. If your
-              assignment code is still called 'starter_code', change it now to something
-              like 'week-1-assignment' or 'portfolio-site'.
+		        <img src="../../dist/images/week-2/add-repo.png" alt="Github GUI add/create/clone repo buttons">
+            <p>
+              Either click the 'Create new project' button on the homescreen or
+							select File > New Repository from the menu.
             </p>
+						<p>
+							Give the repository a meaningful name e.g. week-1-assignment, portfolio-site and
+							point the folder location to be in the folder alongside your starter code.
+						</p>
           </div>
 				</section>
 
@@ -172,13 +176,18 @@
 				  </div>
 
           <div class="content">
-						<h2>Creating your repo</h2>
+						<h2>Moving files</h2>
 
-		        <img src="../../dist/images/week-2/add-repo.png" alt="Github GUI add/create/clone repo buttons">
-            <p>
-              Either click the 'Add' button and provide the path for your project folder. Or
-              simply drag and drop your project folder onto the GitHub Desktop GUI!
-            </p>
+		        <p>
+		        	Select all files from within your starter_code project (excluding the
+							actual starter_code folder itself) e.g. all HTML files etc. Then
+							place them all in your newly created Git repository folder.
+		        </p>
+						<p class="fragment">
+							<strong>Quick sidenote:</strong> If you haven't named your main/homepage file index.html,
+							please do so now. All HTML files should also be at the root level of your
+							project.
+						</p>
           </div>
 				</section>
 
@@ -205,7 +214,7 @@
           <div class="content">
 						<h2>Review code changes</h2>
 
-            <img src="../../dist/images/week-2/review-changes-2.png" alt="Review of changes in commit">
+            <img src="../../dist/images/week-2/review-changes.png" alt="Review of changes in commit">
             <p>
               If you want, you can review the code changes within each file.
             </p>
@@ -222,10 +231,9 @@
 
             <img src="../../dist/images/week-2/commit-message.png" alt="Example of a commit">
             <p>
-              When you commit your changes, you are creating a 'snapshot' of your code
-              at that point in time. So be sure to write a meaningful commit message to
-              help you find the correct 'snapshot' if you ever need to come back to this
-              commit.
+              When you commit your changes, you are creating a unique 'snapshot' of your code.
+							So be sure to write a meaningful commit message to help you find the
+							correct 'snapshot' if you ever need to come back to this commit.
             </p>
           </div>
 				</section>
@@ -236,17 +244,34 @@
 				  </div>
 
           <div class="content">
-						<h2>Publish/Sync</h2>
+						<h2>Publish</h2>
 
             <img src="../../dist/images/week-2/publish-repo.png" alt="Image of the publish button on Github Desktop">
-            <img src="../../dist/images/week-2/sync-repo.png" alt="Image of the sync button on Github Desktop">
+
             <p>
               Once you've committed your first changes, you can 'publish' your repo.
               This will push it up to Github.
             </p>
-            <p>
-              Once your repo has been published, you'll then only be able to 'sync'
-              your repo. Every time you sync after a commit, it will update the remote repo with your
+						<p class="fragment">
+							<strong>Note:</strong> Always be sure to untick the 'Keep project private'
+							checkbox so that we can review it.
+						</p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Git Workflow</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Push</h2>
+
+            <img src="../../dist/images/week-2/sync-repo.png" alt="Image of the sync button on Github Desktop">
+
+						<p>
+              Once your repo has been published, you'll then only be able to 'push'
+              your changes. Every time you push after a commit, it will update the remote repo with your
               latest code.
             </p>
           </div>
@@ -277,15 +302,16 @@
 				  </div>
 
           <div class="content">
-						<h2>Change branches</h2>
+						<h2>Merge code</h2>
 
-            <img src="../../dist/images/week-2/branching.png" alt="Git branching example">
-            <p>
-              Once you have created your 'gh-pages' branch, all that's left is to
-              merge your code from the 'master' branch into your 'gh-pages' branch.
-            </p>
-            <p>
-              Select the dropdown at the very top and click on 'gh-pages'.
+            <img src="../../dist/images/week-2/publish-branch.png" alt="Publish branch example">
+
+						<p>
+							Once you've created the gh-pages branch, now you just need to publish it.
+						</p>
+
+						<p class="fragment">
+              ...AND VOILÀ! You have now published your first website!
             </p>
           </div>
 				</section>
@@ -296,18 +322,17 @@
 				  </div>
 
           <div class="content">
-						<h2>Merge code</h2>
+						<h2>Ongoing changes</h2>
 
-            <img src="../../dist/images/week-2/merge-code.png" alt="Merge code example">
+            <img src="../../dist/images/week-2/update-from-master.png" alt="Merge code example">
             <p>
-              Now in the select box at the top, you can see we are on the 'gh-pages' branch.
+            	For any ongoing changes, make the changes over on the master branch.
             </p>
-            <p>
-              To merge the updates from master, simply click 'Update from master'...
-            </p>
-            <p class="fragment">
-              ...AND VOILÀ! You have now published your first website!
-            </p>
+						<p>
+							When you're ready to update the gh-pages branch, change to gh-pages branch and then
+							select Branch > Update from Default Branch in the menu. Then push.
+						</p>
+
           </div>
 				</section>
 
