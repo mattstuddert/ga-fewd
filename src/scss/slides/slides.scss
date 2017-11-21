@@ -1,29 +1,38 @@
 .reveal .slides {
-  .slide-header {
-  	border-bottom: 2px solid $black;
-  	border-top: 2px solid $black;
-  	padding: 0.25em 0;
+  > section {
+    height: 100%;
+  }
 
-  	h2 {
-  		font-size: 1.1rem;
-  		margin: 0;
-  	}
+  .slide-header {
+    border-bottom: 2px solid $black;
+    border-top: 2px solid $black;
+    padding: 0.25em 0;
+
+    h2 {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+  }
+
+  .bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .content {
-		backface-visibility: hidden;
+    backface-visibility: hidden;
     font-family: $font-family--base !important;
     font-size: 2rem;
-		line-height: 1.5 !important;
+    line-height: 1.5 !important;
 
     h2:not(.h1) {
       font-size: 4rem;
       margin: 0.4em 0;
     }
 
-		p {
-			line-height: 1.5 !important;
-		}
+    p {
+      line-height: 1.5 !important;
+    }
 
     img {
       display: block;
@@ -43,10 +52,10 @@
     }
   }
 
-	.credit {
-		font-size: 1rem;
-		font-style: italic;
-	}
+  .credit {
+    font-size: 1rem;
+    font-style: italic;
+  }
 }
 
 .instructor {
