@@ -15,389 +15,280 @@
 			<div class="slides">
 				<section class="u-bg--black">
 				  <div class="slide-header">
-            <img class="logo" src="../../dist/images/ga/ga-logo-text.png" alt="General Assembly logo">
+				    <img class="logo" src="../../dist/images/ga/ga-logo-text.png" alt="General Assembly logo">
 				  </div>
 
-          <div class="content">
-            <h1>Flexbox</h1>
+				  <div class="content">
+				    <h1>HTML Table</h1>
 						<span class="instructor">Matt Studdert</span>
-          </div>
+				  </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox</h2>
+				    <h2>HTML Table</h2>
 				  </div>
 
-          <div class="content">
-						<h2>What is Flexbox?</h2>
-						<p>
-							Flexbox is a new module in CSS3 that allows us to very easily align
-							elements, order and re-order and change direction of presentation.
-						</p>
-						<p>
-							It removes the need for floats with much more readable and maintainable code.
-						</p>
-          </div>
+				  <div class="content">
+				    <h2>Historical layouts</h2>
+
+				    <p>
+				      In the days before smartphones and tablets, websites were typically
+				      built using tables. This allowed for structured fixed layouts.
+				    </p>
+
+				    <p>
+				      But it is hard to re-format a table's layout, so developers moved
+				      away from this technique once accessing web pages from different
+				      sized devices became the norm.
+				    </p>
+				  </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox</h2>
+				    <h2>HTML Table</h2>
 				  </div>
 
-          <div class="content">
-						<h2>Flex Container</h2>
-						<p>
-							The main principle behind Flexbox is that the container has the ability
-							to expand and shrink child elements to fit the available space.
-						</p>
-          </div>
+				  <div class="content">
+				    <h2>Modern day usage</h2>
+
+				    <p>
+				      The move away from tables for layout purposes has meant that tables
+				      can be used for what they were originally intended to be used for...
+				    </p>
+
+				    <p class="fragment">
+				      ...presenting tabular data!
+				    </p>
+				  </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox</h2>
+				    <h2>HTML Table</h2>
 				  </div>
 
-          <div class="content">
-						<h2><code>display: flex;</code></h2>
-						<p>
-							To create a flex container, we simply apply either <code>display: flex;</code>
-							or <code>display: flex-inline;</code> to the parent element.
-						</p>
-						<img src="../../dist/images/week-10/display-flex.png" alt="Example of how to create a flex container">
-          </div>
-				</section>
+				  <div class="content">
+				    <h2>Table basics</h2>
 
-				<section class="u-bg--black">
-				  <div class="slide-header">
-            <h2>Flex container</h2>
+				    <p>
+				      Tables are structured using columns and rows in order to present data
+				      to the user.
+				    </p>
+				    <p>
+				      The core HTML elements for a table are <code>&lt;table&gt;</code>,
+				      <code>&lt;tr&gt;</code> (table row) and <code>&lt;td&gt;</code> (table data).
+				    </p>
+				    <p>
+				      Table rows contain the table data elements, which make up the columns.
+				    </p>
 				  </div>
-
-          <div class="content">
-            <h2 class="h1">Flexbox Container Properties</h2>
-          </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox container</h2>
+				    <h2>HTML Table</h2>
 				  </div>
 
-          <div class="content">
-						<h2>Flex Container Properties</h2>
-						<p>
-							Once <code>display: flex;</code> has been assigned to the container
-							element, a number of new, Flexbox-specific CSS properties become
-							available to use. Below are the properties that can be applied to the
-							container itself:
-						</p>
+				  <div class="content">
+				    <p>
+				      The first element in any HTML table is the <code>&lt;table&gt;</code> element.
+				      This wraps all other table-related HTML elements.
+				    </p>
 
-						<ul>
-							<li>flex-direction</li>
-							<li>flex-wrap</li>
-							<li>justify-content</li>
-							<li>align-items</li>
-							<li>align-content</li>
-						</ul>
-          </div>
+				    <img src="../../dist/images/week-4/table-element.png" alt="HTML table element example">
+				  </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox</h2>
+				    <h2>HTML Table</h2>
 				  </div>
 
-          <div class="content">
-						<h2>Codepen</h2>
-						<p>
-							We'll use <a href="https://codepen.io/stooderrr/pen/eeejZV" target="_blank">this Codepen</a> to go through the examples.
-						</p>
-          </div>
+				  <div class="content">
+				    <p>
+				      <code>&lt;tr&gt;</code> tags then define each table row.
+				    </p>
+
+				    <img src="../../dist/images/week-4/table-row.png" alt="HTML tr element example">
+				  </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox container properties</h2>
+				    <h2>HTML Table</h2>
 				  </div>
 
-          <div class="content">
-						<h2><code>flex-direction</code></h2>
-						<p>
-							<code>flex-direction</code> dictates the direction in which the container's
-							items will flow.
-						</p>
+				  <div class="content">
+				    <p>
+				      Within the <code>&lt;tr&gt;</code> tags sit the <code>&lt;td&gt;</code> tags,
+				      which each define a new column.
+				    </p>
 
-						<img src="../../dist/images/week-10/flex-direction.png" alt="Example of options for flex-direction CSS property">
-          </div>
+				    <p>
+				      Corresponding <code>&lt;td&gt;</code> tags within a row sit in the same column.
+				    </p>
+
+				    <img src="../../dist/images/week-4/table-data.png" alt="HTML td element example">
+				  </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox container properties</h2>
+				    <h2>HTML Table</h2>
 				  </div>
 
-          <div class="content">
-						<h2><code>justify-content</code></h2>
-						<p>
-							<code>justify-content</code> defines how the browser distributes space
-							around and between a flex container's items on the main axis.
-						</p>
+				  <div class="content">
+				    <h2>Table headings</h2>
 
-						<img src="../../dist/images/week-10/justify-content.png" alt="Example of options for justify-content CSS property">
-          </div>
+				    <p>
+				      If needed, headings can be added to provide context to the data.
+				      The <code>&lt;th&gt;</code> tag is used for this and they sit within
+				      a row.
+				    </p>
+
+				    <img src="../../dist/images/week-4/table-heading.png" alt="HTML th element example">
+				  </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox container properties</h2>
+				    <h2>HTML Table</h2>
 				  </div>
 
-          <div class="content">
-						<h2><code>align-items</code></h2>
-						<p>
-							<code>align-items</code> defines how browsers distribute space around
-							and between elements on the cross axis. So think of it as <code>justify-content</code>,
-							but in the perpendicular direction.
-						</p>
+				  <div class="content">
+				    <h2>Table caption</h2>
 
-						<img src="../../dist/images/week-10/align-items.png" alt="Example of options for align-items CSS property">
-          </div>
+				    <p>
+				      To add a caption or title to a table, the <code>&lt;caption&gt;</code> element
+							can be placed just inside the opening <code>&lt;table&gt;</code> tag.
+				    </p>
+
+				    <img src="../../dist/images/week-4/table-caption.png" alt="HTML caption element example">
+				  </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox container properties</h2>
+				    <h2>HTML Table</h2>
 				  </div>
 
-          <div class="content">
-						<h2><code>flex-wrap</code></h2>
-						<p>
-							<code>flex-wrap</code> defines how elements wrap when there is no
-							more space left on the row.
-						</p>
+				  <div class="content">
+				    <h2>Table structure</h2>
 
-						<img src="../../dist/images/week-10/flex-wrap.png" alt="Example of options for flex-wrap CSS property">
-          </div>
+				    <p>
+				      More structure can be added inside the <code>&lt;table&gt;</code>, with the
+				      addition of <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> and
+				      <code>&lt;tfoot&gt;</code> tags.
+				    </p>
+				  </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox container properties</h2>
+				    <h2>HTML Table</h2>
 				  </div>
 
-          <div class="content">
-						<h2><code>flex-flow</code></h2>
-						<p>
-							<code>flow-direction</code> and <code>flex-wrap</code> are used so
-							frequently together that <code>flex-flow</code> can be used as a
-							shorthand.
-						</p>
+				  <div class="content">
+				    <h2>Table head</h2>
 
-						<img src="../../dist/images/week-10/flex-flow.png" alt="Example of options for flex-flow CSS property">
-          </div>
+				    <p>
+				      The <code>&lt;thead&gt;</code> tag can be added to separate the head row
+				      of the table.
+				    </p>
+
+				    <img src="../../dist/images/week-4/table-thead.png" alt="HTML thead element example">
+				  </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox container properties</h2>
+				    <h2>HTML Table</h2>
 				  </div>
 
-          <div class="content">
-						<h2><code>align-content</code></h2>
-						<p>
-							<code>align-content</code> works in a similar way to <code>justify-content</code>,
-							defining the space around rows of flex items on the cross axis.
-						</p>
+				  <div class="content">
+				    <h2>Table body</h2>
 
-						<img src="../../dist/images/week-10/align-content.png" alt="Example of options for align-content CSS property">
-          </div>
-				</section>
+				    <p>
+				      The <code>&lt;tbody&gt;</code> tag is used to wrap the body of the data.
+				    </p>
 
-				<section class="u-bg--black">
-				  <div class="slide-header">
-            <h2>Flexbox items</h2>
+				    <img src="../../dist/images/week-4/table-tbody.png" alt="HTML tbody element example">
 				  </div>
-
-          <div class="content">
-            <h2 class="h1">Flexbox Item Properties</h2>
-          </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox items</h2>
+				    <h2>HTML Table</h2>
 				  </div>
 
-          <div class="content">
-						<h2>Flex Item Properties</h2>
-						<p>
-							Flex items are the elements that live within a flex container. There
-							are specific CSS properties that can be applied to flex items, which
-							can be seen below:
-						</p>
+				  <div class="content">
+				    <h2>Table foot</h2>
 
-						<ul>
-							<li>align-self</li>
-							<li>order</li>
-							<li>flex-grow</li>
-							<li>flex-shrink</li>
-							<li>flex-basis</li>
-							<li>flex</li>
-						</ul>
-          </div>
+				    <p>
+				      The <code>&lt;tfoot&gt;</code> tag is used finally to present any
+				      extra data.
+				    </p>
+
+				    <img src="../../dist/images/week-4/table-tfoot.png" alt="HTML tbody element example">
+				  </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox item properties</h2>
+				    <h2>Lab</h2>
 				  </div>
 
-          <div class="content">
-						<h2><code>align-self</code></h2>
-						<p>
-							<code>align-self</code> works in exactly the same way as <code>align-items</code>,
-							but is applied to single items within the flex container.
-						</p>
+				  <div class="content">
+				    <h2>HTML Calendar</h2>
 
-						<img src="../../dist/images/week-10/align-self.png" alt="Example of options for align-self CSS property">
-          </div>
+				    <p>
+				      Complete a HTML Calendar, using a table layout. Add styles so that
+							the previous and following month's days are greyed out and there
+							is a hover effect on the current month's dates.
+				    </p>
+
+				    <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+				  </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox item properties</h2>
+				    <h2>Review</h2>
 				  </div>
 
-          <div class="content">
-						<h2><code>order</code></h2>
-						<p>
-							<code>order</code> allows you to apply order values to your flex items,
-							which will affect the order in which the elements are shown.
-						</p>
-
-						<img class="medium" src="../../dist/images/week-10/order.png" alt="Example of options for order CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox item properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>flex-grow</code></h2>
-						<p>
-							<code>flex-grow</code> makes flex elements grow into the available
-							space around them.
-						</p>
-
-						<img src="../../dist/images/week-10/flex-grow.png" alt="Example of options for flex-grow CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox item properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>flex-basis</code></h2>
-						<p>
-							<code>flex-basis</code> is the Flexbox way of defining an item's
-							width.
-						</p>
-
-						<img src="../../dist/images/week-10/flex-basis.png" alt="Example of options for flex-basis CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox item properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>flex-shrink</code></h2>
-						<p>
-							<code>flex-shrink</code> determines how an element shrinks in relation
-							to other elements when there is not enough space on a row.
-						</p>
-
-						<img src="../../dist/images/week-10/flex-shrink.png" alt="Example of options for flex-shrink CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox item properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>flex</code></h2>
-						<p>
-							<code>flex</code> is the shorthand to combine <code>flex-grow</code>,
-							<code>flex-shrink</code> and <code>flex-basis</code> on one line.
-						</p>
-
-						<img src="../../dist/images/week-10/flex.png" alt="Example of options for flex CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Lab</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Flexbox Froggy</h2>
-            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
-            <p>
-            	Tackle <a href="http://flexboxfroggy.com/" target="_blank">this
-							Flexbox Froggy</a> exercise to build your understanding of Flexbox.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Review</h2>
-				  </div>
-
-          <div class="content">
-            <h2>Key Takeaways</h2>
+				  <div class="content">
+				    <h2>Key Takeaways</h2>
 
 						<ul>
 							<li>
 								<p>
-									Flexbox has really changed the way that frontend developers can
-									think about layouts.
+									HTML tables are used to present tabular data to your users
 								</p>
 							</li>
 							<li>
 								<p>
-									By providing fine-grained control over element positioning and
-									spacing, Flexbox has solved many common previous CSS issues.
+									Tables consist of rows (<code>&lt;tr&gt;</code>) and columns (<code>&lt;td&gt;</code>)
 								</p>
 							</li>
 							<li>
 								<p>
-									Be sure to make sure the browsers you are aiming to build for
-									support Flexbox.
+									For structuring tables, the <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> and
+									<code>&lt;tfoot&gt;</code> tags can all be used
 								</p>
 							</li>
 						</ul>
-          </div>
+				  </div>
 				</section>
 			</div>
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/js/reveal.min.js"></script>
 		<script>
-		Reveal.initialize({
-  transition: 'fade',
-  center: false
-});
-</script>
+			Reveal.initialize({
+				transition: 'fade',
+        center: false
+			});
+		</script>
 	</body>
 </html>
