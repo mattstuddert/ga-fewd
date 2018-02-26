@@ -610,11 +610,6 @@
 						<ul>
 							<li>
 								<p>
-									We use normalize.css or reset.css to normalise default browser styles
-								</p>
-							</li>
-							<li>
-								<p>
 									Elements can either be block-level elements or inline elements. There
 									is also a third <code>display</code> property of <code>inline-block</code>
 									that acts as a hybrid.
@@ -626,6 +621,12 @@
 									can have on their parent container
 								</p>
 							</li>
+							<li>
+								<p>
+									Pseudo elements can be used for extra styling purposes and are
+									also used in the clearfix CSS class to prevent parent height collapse.
+								</p>
+							</li>
 						</ul>
           </div>
 				</section>
@@ -633,10 +634,10 @@
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/js/reveal.min.js"></script>
 		<script>
-			Reveal.initialize({
-				transition: 'fade',
-        center: false
-			});
-		</script>
+		Reveal.initialize({
+  transition: 'fade',
+  center: false
+});
+</script>
 	</body>
 </html>
