@@ -19,445 +19,359 @@
 				  </div>
 
           <div class="content">
-            <h1>Advanced CSS</h1>
+            <h1>Flexbox</h1>
 						<span class="instructor">Matt Studdert</span>
           </div>
 				</section>
 
-				<section class="u-bg--black">
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2 class="h1">Transition</h2>
-          </div>
-				</section>
-
 				<section>
 				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
+            <h2>Flexbox</h2>
 				  </div>
 
           <div class="content">
-						<h2>Transition</h2>
-
+						<h2>What is Flexbox?</h2>
 						<p>
-							Transitions allow elements to move from one state to another across
-							a given period of time and with specific easing values in reaction
-							to a state change.
+							Flexbox is a new module in CSS3 that allows us to very easily align
+							elements, order and re-order and change direction of presentation.
+						</p>
+						<p>
+							It removes the need for floats with much more readable and maintainable code.
 						</p>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
+            <h2>Flexbox</h2>
 				  </div>
 
           <div class="content">
-						<img src="../../dist/images/week-9/transition.png" alt="Transition example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Transition</h2>
-
+						<h2>Flex Container</h2>
 						<p>
-							The transition can only be applied on CSS properties that have a mid-point.
-							For example, the <code>display</code> property cannot be animated, as
-							there is no mid-point.
+							The main principle behind Flexbox is that the container has the ability
+							to expand and shrink child elements to fit the available space.
 						</p>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
+            <h2>Flexbox</h2>
 				  </div>
 
           <div class="content">
-						<h2>Cubic Bezier</h2>
-
+						<h2><code>display: flex;</code></h2>
 						<p>
-							All <code>transition-timing-function</code> values are cubic bezier
-							curves, including the keyword values. This means that we can make our
-							own cubic bezier curve to gain complete control of the easing of
-							a transition.
+							To create a flex container, we simply apply either <code>display: flex;</code>
+							or <code>display: flex-inline;</code> to the parent element.
 						</p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>CSS3 Transform</h2>
-
-						<p>
-							With the arrival of CSS3 came new ways to visually manipulate elements,
-							both in a 2D plane and 3D space.
-						</p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Transform Syntax</h2>
-
-						<img src="../../dist/images/week-9/transform-syntax.png" alt="CSS3 Transform syntax example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Transform Values</h2>
-
-						<p>
-							The transform property accepts a range of values, including:
-						</p>
-
-						<ul>
-							<li>Skew</li>
-							<li>Rotate</li>
-							<li>Scale</li>
-							<li>Translate</li>
-							<li>Perspective</li>
-						</ul>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Codepen Demo</h2>
-
-						<p>
-							Click <a href="https://codepen.io/stooderrr/pen/dJEOEK" target="_blank">here</a>
-						</p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Rotate</h2>
-
-						<img src="../../dist/images/week-9/transform-syntax.png" alt="Transform rotate example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Scale</h2>
-
-						<img src="../../dist/images/week-9/transform-scale.png" alt="Transform scale example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Scale X &amp; Scale Y</h2>
-
-						<p>
-							Elements can also be scaled along both the X &amp; Y axis separately. This
-							can happen using either <strong>scaleX</strong>, <strong>scaleY</strong> or using two
-							values inside <strong>scale</strong>.
-						</p>
-
-						<img src="../../dist/images/week-9/transform-scalexy.png" alt="Transform scaleX and scaleY example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Translate</h2>
-
-						<p>
-							Translate moves an element and can be used similarly to scale, whereby
-							<strong>translateX</strong>, <strong>translateY</strong> or by adding
-							two values inside <strong>translate</strong>.
-						</p>
-
-						<img src="../../dist/images/week-9/transform-translate.png" alt="Transform translate example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Skew X &amp; Skew Y</h2>
-
-						<p>
-							Skew also works along the X &amp; Y axis and distorts the target
-							using degrees.
-						</p>
-
-						<img src="../../dist/images/week-9/transform-skewxy.png" alt="Transform skew example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Multiple Transforms</h2>
-
-						<p>
-							Multiple types of transform can also be added to an element at once.
-						</p>
-
-						<img src="../../dist/images/week-9/transform-multiple.png" alt="Transform multiple types example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Transform Origin</h2>
-
-						<p>
-							Elements are transformed from their centre point by default. Transform
-							origin provides the ability to change this.
-						</p>
-
-						<img src="../../dist/images/week-9/transform-origin.png" alt="Transform origin example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Perspective</h2>
-
-						<p>
-							Perspective provides an element a 3D space between the user and the
-							Z plane. The larger the value, the more subtle the effect.
-						</p>
-
-						<img src="../../dist/images/week-9/transform-perspective.png" alt="Transform perspective example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>3D Transforms</h2>
-
-						<p>
-							Elements can also have <strong>scale</strong>, <strong>translate</strong>,
-							<strong>rotate</strong> applied to their Z axis when combined with
-							<strong>perspective</strong>.
-						</p>
+						<img src="../../dist/images/week-10/display-flex.png" alt="Example of how to create a flex container">
           </div>
 				</section>
 
 				<section class="u-bg--black">
 				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
+            <h2>Flex container</h2>
 				  </div>
 
           <div class="content">
-						<h2 class="h1">Animation</h2>
+            <h2 class="h1">Flexbox Container Properties</h2>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
+            <h2>Flexbox container</h2>
 				  </div>
 
           <div class="content">
-						<h2>Animation</h2>
-
+						<h2>Flex Container Properties</h2>
 						<p>
-							Sometimes when you're transitioning an element, you would like more
-							control over the state at certain points of the change. This
-							is where animations come in.
+							Once <code>display: flex;</code> has been assigned to the container
+							element, a number of new, Flexbox-specific CSS properties become
+							available to use. Below are the properties that can be applied to the
+							container itself:
 						</p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Animation Key Points</h2>
 
 						<ul>
-							<li>
-								<p>
-									Can be set to either run immediately on load, or can
-									be initiated in reaction to a state change or event.
-								</p>
-							</li>
-							<li>
-								<p>
-									Provide more fine-grained control over animation state.
-								</p>
-							</li>
-							<li>
-								<p>
-									Allows for easy transition of multiple properties.
-								</p>
-							</li>
-						</ul>
-
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Animation Declaration</h2>
-
-						<p>
-							The <code>@keyframes</code> rule is used to define an animation
-							and is immediately followed by the animation name.
-						</p>
-
-						<img src="../../dist/images/week-9/animation-declaration.png" alt="Animation declaration example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<p>
-							Stages can be defined using percentage values to give more control. The
-							keywords <code>from</code> and <code>to</code> can also be used if the
-							animation is just going between two stages.
-						</p>
-
-						<img src="../../dist/images/week-9/animation-example.png" alt="Animation example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Animation Properties</h2>
-
-						<p>
-							To add the declared <code>@keyframes</code> animation to an element
-							you need to provide animation properties. These include:
-						</p>
-
-						<img src="../../dist/images/week-9/animation-properties.png" alt="Animation properties example">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Animation Examples</h2>
-
-						<ul>
-							<li>Codepen - <a href="https://codepen.io/Venerons/pen/BvHbK" target="_blank">CSS Animations</a></li>
-							<li>Codepen - <a href="https://codepen.io/mikehobizal/pen/AKavB" target="_blank">Cube Fold</a></li>
-							<li>Codepen - <a href="https://codepen.io/Pc/pen/rOQQoy" target="_blank">Slack Logo</a></li>
-							<li>Codepen - <a href="https://codepen.io/mladen___/pen/emLBQe" target="_blank">Starbucks Logo</a></li>
+							<li>flex-direction</li>
+							<li>flex-wrap</li>
+							<li>justify-content</li>
+							<li>align-items</li>
+							<li>align-content</li>
 						</ul>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
+            <h2>Flexbox</h2>
 				  </div>
 
           <div class="content">
-						<h2>Inspiration</h2>
+						<h2>Codepen</h2>
+						<p>
+							We'll use <a href="https://codepen.io/stooderrr/pen/eeejZV" target="_blank">this Codepen</a> to go through the examples.
+						</p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Flexbox container properties</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>flex-direction</code></h2>
+						<p>
+							<code>flex-direction</code> dictates the direction in which the container's
+							items will flow.
+						</p>
+
+						<img src="../../dist/images/week-10/flex-direction.png" alt="Example of options for flex-direction CSS property">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Flexbox container properties</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>justify-content</code></h2>
+						<p>
+							<code>justify-content</code> defines how the browser distributes space
+							around and between a flex container's items on the main axis.
+						</p>
+
+						<img src="../../dist/images/week-10/justify-content.png" alt="Example of options for justify-content CSS property">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Flexbox container properties</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>align-items</code></h2>
+						<p>
+							<code>align-items</code> defines how browsers distribute space around
+							and between elements on the cross axis. So think of it as <code>justify-content</code>,
+							but in the perpendicular direction.
+						</p>
+
+						<img src="../../dist/images/week-10/align-items.png" alt="Example of options for align-items CSS property">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Flexbox container properties</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>flex-wrap</code></h2>
+						<p>
+							<code>flex-wrap</code> defines how elements wrap when there is no
+							more space left on the row.
+						</p>
+
+						<img src="../../dist/images/week-10/flex-wrap.png" alt="Example of options for flex-wrap CSS property">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Flexbox container properties</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>flex-flow</code></h2>
+						<p>
+							<code>flow-direction</code> and <code>flex-wrap</code> are used so
+							frequently together that <code>flex-flow</code> can be used as a
+							shorthand.
+						</p>
+
+						<img src="../../dist/images/week-10/flex-flow.png" alt="Example of options for flex-flow CSS property">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Flexbox container properties</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>align-content</code></h2>
+						<p>
+							<code>align-content</code> works in a similar way to <code>justify-content</code>,
+							defining the space around rows of flex items on the cross axis.
+						</p>
+
+						<img src="../../dist/images/week-10/align-content.png" alt="Example of options for align-content CSS property">
+          </div>
+				</section>
+
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <h2>Flexbox items</h2>
+				  </div>
+
+          <div class="content">
+            <h2 class="h1">Flexbox Item Properties</h2>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Flexbox items</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Flex Item Properties</h2>
+						<p>
+							Flex items are the elements that live within a flex container. There
+							are specific CSS properties that can be applied to flex items, which
+							can be seen below:
+						</p>
 
 						<ul>
-							<li>Codrops - <a href="https://tympanus.net/Development/ButtonStylesInspiration/" target="_blank">Buttons</a></li>
-							<li>Codrops - <a href="https://tympanus.net/Development/FullscreenOverlayStyles/" target="_blank">Nav Overlay</a></li>
-							<li>Codrops - <a href="https://tympanus.net/Development/LineMenuStyles/" target="_blank">Header Nav</a></li>
-							<li>Codrops - <a href="https://tympanus.net/Development/SearchUIEffects/" target="_blank">Search UI</a></li>
+							<li>align-self</li>
+							<li>order</li>
+							<li>flex-grow</li>
+							<li>flex-shrink</li>
+							<li>flex-basis</li>
+							<li>flex</li>
 						</ul>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Advanced CSS</h2>
+            <h2>Flexbox item properties</h2>
 				  </div>
 
           <div class="content">
-						<h2>Animation Lab</h2>
-
+						<h2><code>align-self</code></h2>
 						<p>
-							Complete <a href="http://codepen.io/stooderrr/pen/KWrNwM" target="_blank">this</a>
-							animation exercise.
+							<code>align-self</code> works in exactly the same way as <code>align-items</code>,
+							but is applied to single items within the flex container.
 						</p>
 
+						<img src="../../dist/images/week-10/align-self.png" alt="Example of options for align-self CSS property">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Flexbox item properties</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>order</code></h2>
 						<p>
-							Once completed, move onto your final project and find somewhere to
-							add either some transforms, transitions or animations.
+							<code>order</code> allows you to apply order values to your flex items,
+							which will affect the order in which the elements are shown.
 						</p>
 
-						<img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+						<img class="medium" src="../../dist/images/week-10/order.png" alt="Example of options for order CSS property">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Flexbox item properties</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>flex-grow</code></h2>
+						<p>
+							<code>flex-grow</code> makes flex elements grow into the available
+							space around them.
+						</p>
+
+						<img src="../../dist/images/week-10/flex-grow.png" alt="Example of options for flex-grow CSS property">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Flexbox item properties</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>flex-basis</code></h2>
+						<p>
+							<code>flex-basis</code> is the Flexbox way of defining an item's
+							width.
+						</p>
+
+						<img src="../../dist/images/week-10/flex-basis.png" alt="Example of options for flex-basis CSS property">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Flexbox item properties</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>flex-shrink</code></h2>
+						<p>
+							<code>flex-shrink</code> determines how an element shrinks in relation
+							to other elements when there is not enough space on a row.
+						</p>
+
+						<img src="../../dist/images/week-10/flex-shrink.png" alt="Example of options for flex-shrink CSS property">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Flexbox item properties</h2>
+				  </div>
+
+          <div class="content">
+						<h2><code>flex</code></h2>
+						<p>
+							<code>flex</code> is the shorthand to combine <code>flex-grow</code>,
+							<code>flex-shrink</code> and <code>flex-basis</code> on one line.
+						</p>
+
+						<img src="../../dist/images/week-10/flex.png" alt="Example of options for flex CSS property">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Lab</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Flexbox Froggy</h2>
+            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+            <p>
+            	Tackle <a href="http://flexboxfroggy.com/" target="_blank">this
+							Flexbox Froggy</a> exercise to build your understanding of Flexbox.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Lab</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Flexbox Layout</h2>
+            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+            <p>
+							If you finish Flexbox Froggy early, have a go at building out a basic layout using 
+							only flexbox for layout related styles (and not using width).
+            </p>
           </div>
 				</section>
 
@@ -472,20 +386,20 @@
 						<ul>
 							<li>
 								<p>
-									Transforms can be used to manipulate elements across a 2D place
-									and also a 3D space.
+									Flexbox has really changed the way that frontend developers can
+									think about layouts.
 								</p>
 							</li>
 							<li>
 								<p>
-									Transitions can be applied to elements to create gradual changes from one
-									state to another.
+									By providing fine-grained control over element positioning and
+									spacing, Flexbox has solved many common previous CSS issues.
 								</p>
 							</li>
 							<li>
 								<p>
-									Animations can be used when more fine-grained control over animation
-									state is required.
+									Be sure to make sure the browsers you are aiming to build for
+									support Flexbox.
 								</p>
 							</li>
 						</ul>
