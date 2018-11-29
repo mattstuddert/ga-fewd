@@ -19,358 +19,331 @@
 				  </div>
 
           <div class="content">
-            <h1>Flexbox</h1>
+            <h1>Structuring CSS</h1>
 						<span class="instructor">Matt Studdert</span>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox</h2>
+            <h2>Structuring CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2>What is Flexbox?</h2>
+						<h2>Moving beyond CSS</h2>
 						<p>
-							Flexbox is a new module in CSS3 that allows us to very easily align
-							elements, order and re-order and change direction of presentation.
+							As you start to build more complex websites it's easy for your CSS 
+							to get a little out of control.
 						</p>
 						<p>
-							It removes the need for floats with much more readable and maintainable code.
+							Luckily we have a few tools we can use to tame our spaghetti code!
 						</p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Flex Container</h2>
-						<p>
-							The main principle behind Flexbox is that the container has the ability
-							to expand and shrink child elements to fit the available space.
-						</p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>display: flex;</code></h2>
-						<p>
-							To create a flex container, we simply apply either <code>display: flex;</code>
-							or <code>display: flex-inline;</code> to the parent element.
-						</p>
-						<img src="../../dist/images/week-10/display-flex.png" alt="Example of how to create a flex container">
           </div>
 				</section>
 
 				<section class="u-bg--black">
 				  <div class="slide-header">
-            <h2>Flex container</h2>
+            <h2>Structuring CSS</h2>
 				  </div>
 
           <div class="content">
-            <h2 class="h1">Flexbox Container Properties</h2>
+            <h2 class="h1">CSS Preprocessors</h2>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox container</h2>
+            <h2>Structuring CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2>Flex Container Properties</h2>
+						<h2>What are CSS preprocessors?</h2>
 						<p>
-							Once <code>display: flex;</code> has been assigned to the container
-							element, a number of new, Flexbox-specific CSS properties become
-							available to use. Below are the properties that can be applied to the
-							container itself:
+							CSS preprocessors provide an alternate syntax to writing CSS, as well 
+							as adding in various pieces of functionality to help improve your workflow.
 						</p>
+          </div>
+				</section>
 
+				<section>
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Why would we use them?</h2>
+						<p>
+							CSS preprocessors allow us to write more maintainable code while also 
+							massively reducing the amount of code we write overall.
+						</p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>What are the options?</h2>
+						<p>
+							The 3 most common CSS preprocessors are <a href="http://sass-lang.com/" target="_blank">Sass</a>, 
+							<a href="http://lesscss.org/" target="_blank">Less</a> and <a href="http://stylus-lang.com/">Stylus</a>.
+						</p>
+						<p>
+							They all offer slightly different flavours for how to write your styles, but Sass is by far the most 
+							used.
+						</p>
+          </div>
+				</section>
+
+				<section class="u-bg--black">
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+            <h2 class="h1">Sass</h2>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Introducing Sass</h2>
+						<p>
+							Sass (meaning Syntactically Awesome Stylesheets) has become the typical 
+							go-to styling method for a lot of companies.
+						</p>
+						<p>
+							It's been around for over 10 years now and so is a very mature CSS extension 
+							language that you can be sure won't be going anywhere for a while. 
+						</p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Sass features</h2>
+						<p>
+							Sass offers a number of powerful features, including:
+						</p>
 						<ul>
-							<li>flex-direction</li>
-							<li>flex-wrap</li>
-							<li>justify-content</li>
-							<li>align-items</li>
-							<li>align-content</li>
+							<li>
+								Importing partials
+							</li>
+							<li>
+								Variables
+							</li>
+							<li>
+								Nesting
+							</li>
+							<li>
+								Mixins
+							</li>
+							<li>
+								Placeholders/Extends
+							</li>
 						</ul>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox</h2>
+            <h2>Structuring CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2>Codepen</h2>
+						<h2>Partials</h2>
 						<p>
-							We'll use <a href="https://codepen.io/stooderrr/pen/eeejZV" target="_blank">this Codepen</a> to go through the examples.
+							Partials allow us to create smaller CSS files that can be 
+							imported into a larger file.
+						</p>
+						<img src="../../dist/images/week-9/sass-partials.png" alt="Text editor screenshot of Sass import syntax">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Variables</h2>
+						<p>
+							Just like JavaScript, variables allow us to store values for use at a 
+							later time in our code.
+						</p>
+						<img src="../../dist/images/week-9/sass-variables.png" alt="Text editor screenshot of Sass variable syntax">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Nesting</h2>
+						<p>
+							HTML has a clear nesting structure, whereas CSS doesn't. With 
+							Sass you can nest your selectors for a clearer visual hierarchy.
+						</p>
+						<img src="../../dist/images/week-9/sass-nesting.png" alt="Text editor screenshot of Sass nesting syntax">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Nesting downfalls</h2>
+						<p>
+							Every level that you nest adds specificity to your 
+							selector chain. Therefore it is recommended to not 
+							go beyond 4 levels of nesting in your Sass code.
 						</p>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox container properties</h2>
+            <h2>Structuring CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2><code>flex-direction</code></h2>
+						<h2>Mixins</h2>
 						<p>
-							<code>flex-direction</code> dictates the direction in which the container's
-							items will flow.
+							Mixins allow you to create reusable CSS rules that you 
+							can pass values to.
 						</p>
-
-						<img src="../../dist/images/week-10/flex-direction.png" alt="Example of options for flex-direction CSS property">
+						<img src="../../dist/images/week-9/sass-mixins.png" alt="Text editor screenshot of Sass mixins syntax">
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox container properties</h2>
+            <h2>Structuring CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2><code>justify-content</code></h2>
+						<h2>Extends</h2>
 						<p>
-							<code>justify-content</code> defines how the browser distributes space
-							around and between a flex container's items on the main axis.
+							Extends allow us to create sets of shareable CSS properties 
+							that we can use throughout our code.
 						</p>
-
-						<img src="../../dist/images/week-10/justify-content.png" alt="Example of options for justify-content CSS property">
+						<img src="../../dist/images/week-9/sass-extends.png" alt="Text editor screenshot of Sass extends syntax">
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>Flexbox container properties</h2>
+            <h2>Structuring CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2><code>align-items</code></h2>
-						<p>
-							<code>align-items</code> defines how browsers distribute space around
-							and between elements on the cross axis. So think of it as <code>justify-content</code>,
-							but in the perpendicular direction.
-						</p>
-
-						<img src="../../dist/images/week-10/align-items.png" alt="Example of options for align-items CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox container properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>flex-wrap</code></h2>
-						<p>
-							<code>flex-wrap</code> defines how elements wrap when there is no
-							more space left on the row.
-						</p>
-
-						<img src="../../dist/images/week-10/flex-wrap.png" alt="Example of options for flex-wrap CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox container properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>flex-flow</code></h2>
-						<p>
-							<code>flow-direction</code> and <code>flex-wrap</code> are used so
-							frequently together that <code>flex-flow</code> can be used as a
-							shorthand.
-						</p>
-
-						<img src="../../dist/images/week-10/flex-flow.png" alt="Example of options for flex-flow CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox container properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>align-content</code></h2>
-						<p>
-							<code>align-content</code> works in a similar way to <code>justify-content</code>,
-							defining the space around rows of flex items on the cross axis.
-						</p>
-
-						<img src="../../dist/images/week-10/align-content.png" alt="Example of options for align-content CSS property">
-          </div>
-				</section>
-
-				<section class="u-bg--black">
-				  <div class="slide-header">
-            <h2>Flexbox items</h2>
-				  </div>
-
-          <div class="content">
-            <h2 class="h1">Flexbox Item Properties</h2>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox items</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Flex Item Properties</h2>
-						<p>
-							Flex items are the elements that live within a flex container. There
-							are specific CSS properties that can be applied to flex items, which
-							can be seen below:
-						</p>
-
-						<ul>
-							<li>align-self</li>
-							<li>order</li>
-							<li>flex-grow</li>
-							<li>flex-shrink</li>
-							<li>flex-basis</li>
-							<li>flex</li>
-						</ul>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox item properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>align-self</code></h2>
-						<p>
-							<code>align-self</code> works in exactly the same way as <code>align-items</code>,
-							but is applied to single items within the flex container.
-						</p>
-
-						<img src="../../dist/images/week-10/align-self.png" alt="Example of options for align-self CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox item properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>order</code></h2>
-						<p>
-							<code>order</code> allows you to apply order values to your flex items,
-							which will affect the order in which the elements are shown.
-						</p>
-
-						<img class="medium" src="../../dist/images/week-10/order.png" alt="Example of options for order CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox item properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>flex-grow</code></h2>
-						<p>
-							<code>flex-grow</code> makes flex elements grow into the available
-							space around them.
-						</p>
-
-						<img src="../../dist/images/week-10/flex-grow.png" alt="Example of options for flex-grow CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox item properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>flex-basis</code></h2>
-						<p>
-							<code>flex-basis</code> is the Flexbox way of defining an item's
-							width.
-						</p>
-
-						<img src="../../dist/images/week-10/flex-basis.png" alt="Example of options for flex-basis CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox item properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>flex-shrink</code></h2>
-						<p>
-							<code>flex-shrink</code> determines how an element shrinks in relation
-							to other elements when there is not enough space on a row.
-						</p>
-
-						<img src="../../dist/images/week-10/flex-shrink.png" alt="Example of options for flex-shrink CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Flexbox item properties</h2>
-				  </div>
-
-          <div class="content">
-						<h2><code>flex</code></h2>
-						<p>
-							<code>flex</code> is the shorthand to combine <code>flex-grow</code>,
-							<code>flex-shrink</code> and <code>flex-basis</code> on one line.
-						</p>
-
-						<img src="../../dist/images/week-10/flex.png" alt="Example of options for flex CSS property">
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Lab</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Flexbox Froggy</h2>
-            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+						<h2>Sassy Startup Matchmaker</h2>
+            <img src="../../dist/images/ga/ga-code-along-icon.png" alt="General Assembly code along icon">
             <p>
-            	Tackle <a href="http://flexboxfroggy.com/" target="_blank">this
-							Flexbox Froggy</a> exercise to build your understanding of Flexbox.
+							Let's refactor Startup Matchmaker using Sass to make 
+							our CSS cleaner and more maintainable.
             </p>
           </div>
 				</section>
 
-				<section>
+				<section class="u-bg--black">
 				  <div class="slide-header">
-            <h2>Lab</h2>
+            <h2>Structuring CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2>Flexbox Layout</h2>
-            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
+            <h2 class="h1">BEM</h2>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>What is BEM?</h2>
             <p>
-							If you finish Flexbox Froggy early, have a go at building out a basic layout using 
-							only flexbox for layout related styles (and not using width).
+							Block Element Modifier is a naming convention that makes 
+							our front-end code much easier to maintain.
+						</p>
+						<p>
+							By creating completely isolated components, we very easily reuse 
+							our front-end code, even from project to project!
+						</p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Block</h2>
+            <p>
+							The block encapsulates a group of elements that can, if needed, 
+							be shared around.
+						</p>
+						<img src="../../dist/images/week-9/block.png" alt="Text editor screenshot of how to structure a BEM block">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Element</h2>
+            <p>
+							Any element is tied to its block and cannot be shared around exclusive 
+							of it.
+						</p>
+						<img src="../../dist/images/week-9/block-element.png" alt="Text editor screenshot of how to structure a BEM element">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Modifier</h2>
+            <p>
+							Modifiers can be used to change the appearance of an element 
+							or group of elements.
+						</p>
+						<img src="../../dist/images/week-9/bem-modifier.png" alt="Text editor screenshot of how to structure a BEM modifier">
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Structuring CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Startup Matchmaker with BEM</h2>
+            <img src="../../dist/images/ga/ga-code-along-icon.png" alt="General Assembly code along icon">
+            <p>
+							Let's continue to refactor Startup Matchmaker by implementing 
+							a BEM naming convention.
             </p>
           </div>
 				</section>
@@ -386,20 +359,20 @@
 						<ul>
 							<li>
 								<p>
-									Flexbox has really changed the way that frontend developers can
-									think about layouts.
+									CSS preprocessors can be used to make our CSS easier to 
+									maintain
 								</p>
 							</li>
 							<li>
 								<p>
-									By providing fine-grained control over element positioning and
-									spacing, Flexbox has solved many common previous CSS issues.
+									Sass is the most popular preprocessor and provides features 
+									such as variables, mixins and extends
 								</p>
 							</li>
 							<li>
 								<p>
-									Be sure to make sure the browsers you are aiming to build for
-									support Flexbox.
+									BEM is a naming convention that we can use to create reusable 
+									components
 								</p>
 							</li>
 						</ul>
