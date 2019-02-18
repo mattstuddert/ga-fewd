@@ -158,9 +158,9 @@
           <div class="content">
 						<h2>Creating your repo</h2>
 
-		        <img src="../../dist/images/week-2/add-repo.png" alt="Github GUI add/create/clone repo buttons">
+		        <img class="medium" src="../../dist/images/week-2/github-add-repo.png" alt="Github GUI add/create/clone repo buttons">
             <p>
-              Either click the 'Add a local repository' button on the homescreen or select File > Add Local Repository from the menu.
+              Click "Add an Existing Repository from Your Hard Drive..."
             </p>
           </div>
 				</section>
@@ -201,11 +201,80 @@
 				  </div>
 
           <div class="content">
-						<h2>Review files</h2>
+						<h2>Publish</h2>
+
+            <img class="medium" src="../../dist/images/week-2/github-publish-repo.png" alt="Image of the publish button on Github Desktop">
+
+            <p>
+              Once you've created your repo, you can 'publish' it.
+              This will push it up to GitHub.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Git Workflow</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Publish</h2>
+
+						<img class="medium" src="../../dist/images/week-2/github-make-public.png" alt="Making the repo public by unchecking the checkbox">
+						
+						<p>
+							<strong>Note:</strong> Always be sure to untick the 'Keep project private'.
+						</p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Git Workflow</h2>
+				  </div>
+
+          <div class="content">
+						<h2>GitHub Pages</h2>
+
+            <img class="medium" src="../../dist/images/week-2/settings-gh-pages.png" alt="Setting up GitHub pages on the repo">
+            <p>
+              Once your code has been pushed to your repo, you can publish it to a live URL 
+              using GitHub Pages.
+            </p>
+            <p>
+              First go to Settings in your repo, then scroll to the GitHub Pages section.
+            </p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Git Workflow</h2>
+				  </div>
+
+          <div class="content">
+						<h2>GitHub Pages</h2>
+
+            <img class="medium" src="../../dist/images/week-2/settings-gh-pages-menu.png" alt="Attaching GitHub pages to master branch">
+
+						<p>
+							Once you've selected the master branch and saved you can access your site!
+						</p>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>Git Workflow</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Making commits</h2>
 
             <img src="../../dist/images/week-2/review-changes.png" alt="Review of changes in commit">
             <p>
-              Review the files that have been changed since your last commit.
+							Every change you now make will be automatically tracked. 
+							To push your changes to your repo, first review the changes that have been made.
             </p>
           </div>
 				</section>
@@ -248,34 +317,13 @@
 				  </div>
 
           <div class="content">
-						<h2>Publish</h2>
-
-            <img src="../../dist/images/week-2/publish-repo.png" alt="Image of the publish button on Github Desktop">
-
-            <p>
-              Once you've committed your first changes, you can 'publish' your repo.
-              This will push it up to Github.
-            </p>
-						<p class="fragment">
-							<strong>Note:</strong> Always be sure to untick the 'Keep project private'
-							checkbox so that we can review it.
-						</p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Git Workflow</h2>
-				  </div>
-
-          <div class="content">
 						<h2>Push</h2>
 
-            <img src="../../dist/images/week-2/sync-repo.png" alt="Image of the sync button on Github Desktop">
+            <img class="medium" src="../../dist/images/week-2/github-push-changes.png" alt="Push changes to your remote repo on Github Desktop">
 
 						<p>
-              Once your repo has been published, you'll then only be able to 'push'
-              your changes. Every time you push after a commit, it will update the remote repo with your
+              Once you have committed your changes, you'll then only be able to 'push'
+              them. Every time you push after a commit, it will update the remote repo with your
               latest code.
             </p>
           </div>
@@ -287,58 +335,31 @@
 				  </div>
 
           <div class="content">
-						<h2>Branching</h2>
-
-            <img src="../../dist/images/week-2/branching.png" alt="Git branching example">
-            <p>
-              Once your code has been pushed to your repo, you can create a new branch.
-              For our purposes, the only branch we shall be creating is called <strong>'gh-pages'</strong>.
-            </p>
-            <p>
-              This is a special GitHub branch, that will freely host your site online!
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Git Workflow</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Merge code</h2>
-
-            <img src="../../dist/images/week-2/publish-branch.png" alt="Publish branch example">
-
-						<p>
-							Once you've created the gh-pages branch, now you just need to publish it.
-						</p>
-
-						<p class="fragment">
-              ...AND VOILÀ! You have now published your first website!
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Git Workflow</h2>
-				  </div>
-
-          <div class="content">
 						<h2>Ongoing changes</h2>
-
-            <img src="../../dist/images/week-2/update-from-master.png" alt="Merge code example">
             <p>
-            	For any ongoing changes, make the changes over on the master branch.
+            	All ongoing changes will now be tracked automatically.
             </p>
-						<p>
-							When you're ready to update the gh-pages branch, change to gh-pages branch and then
-							select Branch > Update from Default Branch in the menu. Then push.
-						</p>
-
+            <p>
+              To push any new code to the repo you'll need to go back through the commit and push 
+              steps. The live GitHub Pages site will update automatically once changes are pushed.
+            </p>
           </div>
 				</section>
+				
+				<section>
+				  <div class="slide-header">
+            <h2>Git Workflow</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Submitting your homework</h2>
+						<img src="../../dist/images/week-2/homework-submission.png" alt="Submitting homework using spreadsheet on Google Drive">
+            <p>
+							When you are ready to submit your homework, add the GitHub Pages URL to 
+							the homework tracker spreadsheet in your student folder on Google Drive. 
+            </p>
+          </div>
+        </section>
 
 				<section class="u-bg--black">
 				  <div class="slide-header">
