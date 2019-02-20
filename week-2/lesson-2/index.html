@@ -134,6 +134,7 @@
 							<li>Relative</li>
 							<li>Absolute</li>
 							<li>Fixed</li>
+							<li>Sticky</li>
 						</ul>
 					</div>
 				</section>
@@ -173,7 +174,7 @@
 						<ul>
 							<li class="fragment">
 								If no other properties are set, the element will maintain all normal
-								behviour.
+								behaviour.
 							</li>
 							<li class="fragment">
 								Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
@@ -251,9 +252,32 @@
 					</div>
 
 					<div class="content">
+						<h2><code>position: sticky;</code></h2>
+
+						<ul>
+							<li class="fragment">
+								Treated as relative positioned until it crosses a specified threshold
+							</li>
+							<li class="fragment">
+								When it crosses that threshold it is treated as fixed positioned
+							</li>
+							<li class="fragment">
+								Does respond to <code>top</code>, <code>right</code>, <code>bottom</code>,
+								<code>left</code> and <code>z-index</code> properties.
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="slide-header">
+						<h2>Positioning</h2>
+					</div>
+
+					<div class="content">
 						<h2>Codepen example</h2>
 						<p>
-							Click <a href="http://codepen.io/stooderrr/pen/ZOWRgO" target="_blank">here</a>
+							<a href="https://codepen.io/stooderrr/pen/ErMBjW" target="_blank">Click here</a>
 						</p>
 					</div>
 				</section>
@@ -295,21 +319,6 @@
 							<code>z-index</code> scale for a project to manage this.
 						</p>
 					</div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>Positioning</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Practice using position and z-index</h2>
-            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
-            <p>
-              Take 10 minutes to practice changing the position and z-index values
-							of the different elements on the Codepen example.
-            </p>
-          </div>
 				</section>
 
 				<section class="u-bg--black">
@@ -465,7 +474,7 @@
             <img src="../../dist/images/ga/ga-code-along-icon.png" alt="General Assembly lab icon">
             <p>
               Let's take a look at how we can add font icons to a project using
-							<a href="http://fontawesome.io/" target="_blank">Font Awesome</a>.
+							<a href="http://fontawesome.com" target="_blank">Font Awesome</a>.
             </p>
           </div>
 				</section>
@@ -487,7 +496,7 @@
               can be manipulated in the same way as HTML elements can be.
             </p>
             <p>
-              Let's look at this <a href="http://codepen.io/iamjoshellis/pen/KVdQqm" target="_blank">example</a>.
+              <a href="http://codepen.io/iamjoshellis/pen/KVdQqm" target="_blank">Let's look at this example</a>.
             </p>
           </div>
 				</section>
@@ -537,20 +546,18 @@
 								<p>
 									The <code>position</code> property is used to change the position of
 									elements to either <code>static</code>, <code>relative</code>,
-									<code>absolute</code> or <code>fixed</code>
+									<code>absolute</code>, <code>fixed</code> or <code>sticky</code>
 								</p>
 							</li>
 							<li>
 								<p>
-									Changing the font and how text is displayed can have
-									a dramatic impact on how readable your content is
+									Changing how text is displayed is a critical decision in building a usable website
 								</p>
 							</li>
 							<li>
 								<p>
 									Font icons can be used to add icons to your site in the form
-									of SVGs, which are great as they can scale without losing
-									resolution
+									of SVGs, which can scale without losing quality
 								</p>
 							</li>
 						</ul>
