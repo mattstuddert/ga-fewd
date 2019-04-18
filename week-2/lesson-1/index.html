@@ -548,134 +548,91 @@
           </div>
 				</section>
 
-				<section>
+				<section class="u-bg--black">
 				  <div class="slide-header">
-            <h2>CSS Selectors</h2>
+            <h2>CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2>The selector chain</h2>
+            <h1>Specificity</h1>
+          </div>
+				</section>
+
+				<section>
+				  <div class="slide-header">
+            <h2>CSS</h2>
+				  </div>
+
+          <div class="content">
+						<h2>Specificity</h2>
 
             <p>
-              In our first CSS lesson, we had a look at classes, IDs and we also
-              talked about specificity.
+              Determines how specific your selectors are.
+            </p>
+            <p>
+              As a rule of thumb, CSS code is easiest to manage
+              when your selectors are specific enough to target the required
+              element, but not so specific that there may be knock-on consequences
+              for other, similar elements.
+            </p>
+            <p>
+              This is because more specific selector chains will override less
+              specific ones.
             </p>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>CSS Selectors</h2>
+            <h2>CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2>Classes vs IDs</h2>
+						<h2>Calculating specificity</h2>
 
-						<ul>
-							<li class="fragment">
-								Classes can be used multiple times on one page
-							</li>
-							<li class="fragment">
-								Classes are less specific than IDs
-							</li>
-							<li class="fragment">
-								Classes are extremely useful for styling groups of elements with
-	              a common styling pattern
-							</li>
-						</ul>
+            <img src="../../dist/images/week-1/css-specificity.png" alt="CSS specificity table">
+            <p class="credit">Credit: <a href="https://webdevstudios.com/2015/05/26/css-specificity-may-not-known/" target="_blank">Web Dev Studios</a></p>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>CSS Selectors</h2>
+            <h2>CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2>Advanced selectors</h2>
-
-            <p>
-              Learning how to target elements effectively for styling, beyond
-              simply using classes, is a key skill to develop in CSS.
-            </p>
-            <p>
-              Let's take a look at some more ways to home in on our target elements.
-            </p>
+						<h2>Codepen Example</h2>
+            <p>Click <a href="http://codepen.io/stooderrr/pen/MeWVoR" target="_blank">here</a></p>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>CSS Selectors</h2>
+            <h2>CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2>Descendant selectors</h2>
-            <img src="../../dist/images/week-2/css-descendant-selector.png" alt="CSS descendant selector example">
-            <p>
-              What element(s) is this selector chain targeting?
-            </p>
-            <p class="fragment">
-              Any anchor tag within any paragraph tag, that is within any section tag. Putting
-              a space between the selectors means that you are targeting a child element.
-            </p>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS Selectors</h2>
-				  </div>
-
-          <div class="content">
-						<h2>More selectors</h2>
-            <img class="inline-img" src="../../dist/images/week-2/css-selectors-1.png" alt="CSS selector example">
-            <img class="inline-img" src="../../dist/images/week-2/css-selectors-2.png" alt="CSS selector example">
-            <img class="inline-img" src="../../dist/images/week-2/css-selectors-3.png" alt="CSS selector example">
+						<h2>What to use for styling</h2>
 
             <p>
-              What are these 3 selector chains targeting?
+              It's advisable to avoid putting these 3 things in your selector chains:
             </p>
-						<ol>
-							<li class="fragment">
-								An element with both the classes 'quote' AND 'large'
-							</li>
-							<li class="fragment">
-								Elements with a class of 'quote' OR 'intro'
-							</li>
-							<li class="fragment">
-								Any input tag that has an attribute of <code>type="submit"</code>
-							</li>
-						</ol>
-          </div>
-				</section>
-
-				<section>
-				  <div class="slide-header">
-            <h2>CSS Selectors</h2>
-				  </div>
-
-          <div class="content">
-						<h2>Selector combinators </h2>
-
             <ul>
               <li class="fragment">
 								<p>
-									<img class="inline-img" src="../../dist/images/week-2/selector-combinators-1.png" alt="Adjacent sibling selector">
-									selects matching sibling that immediately follows the first element declared
+                	IDs: Should only be used for JavaScript interaction
 								</p>
               </li>
               <li class="fragment">
 								<p>
-									<img class="inline-img" src="../../dist/images/week-2/selector-combinators-3.png" alt="General sibling selector">
-									selects all matching elements specified that share
-	                a parent with the first element declared
+	                Inline styles: Very hard to maintain code if styling is in multiple
+									locations
 								</p>
               </li>
               <li class="fragment">
 								<p>
-									<img class="inline-img" src="../../dist/images/week-2/selector-combinators-2.png" alt="Descendant selector">
-									selects the direct matching child of the first element declared
+	                !important flag: things are going seriously wrong if you find
+	                a lot of these dotted around your code!
 								</p>
               </li>
             </ul>
@@ -684,57 +641,32 @@
 
 				<section>
 				  <div class="slide-header">
-            <h2>CSS Selectors</h2>
+            <h2>CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2>Pseudo classes</h2>
+						<h2>Inheritance</h2>
 
-            <ul>
-              <li>
-								<p>
-									<img class="inline-img" src="../../dist/images/week-2/pseudo-classes-1.png" alt="nth-child pseudo class example">
-									selects a child element whose numeric position in the
-	                the series of child elements matches the pattern an+b.
-								</p>
-              </li>
-              <li>
-								<p>
-									<img class="inline-img" src="../../dist/images/week-2/pseudo-classes-3.png" alt="hover pseudo class example">
-									applies styles to an element when the cursor hovers over it.
-								</p>
-              </li>
-              <li>
-								<p>
-									<img class="inline-img" src="../../dist/images/week-2/pseudo-classes-4.png" alt="focus pseudo class example">
-									activated when the user selects the element. Typically used for form inputs.
-								</p>
-              </li>
-            </ul>
+            <p>
+              Some CSS styles can be handed down from the parent element to
+              all of its children. This is known as inheritance.
+            </p>
+            <p>
+              You can find out which CSS properties are inherited by checking
+              the 'inherited' column in <a href="https://www.w3.org/TR/CSS21/propidx.html">this</a>
+              W3C table.
+            </p>
           </div>
 				</section>
 
 				<section>
 				  <div class="slide-header">
-            <h2>CSS Selectors</h2>
+            <h2>CSS</h2>
 				  </div>
 
           <div class="content">
-						<h2>Nested selectors</h2>
-            <img src="../../dist/images/ga/ga-lab-icon.png" alt="General Assembly lab icon">
-            <p>
-              Learning how to effectively target elements for styling is crucial
-              for writing clean CSS code.
-            </p>
-            <p>
-              <a href="http://flukeout.github.io/" target="_blank">Complete this exercise</a> to
-              build your understanding of selector chains. There will be a few new
-              selectors in there!
-            </p>
-            <p>
-              If you run into trouble <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank">this
-              MDN article is a great resource</a>.
-            </p>
+						<h2>Codepen Example</h2>
+            <p>Click <a href="http://codepen.io/stooderrr/pen/jrOzpJ" target="_blank">here</a></p>
           </div>
 				</section>
 
